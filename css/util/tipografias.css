@@ -1,3 +1,7 @@
+:root {
+    --font-small: 4rem;
+}
+
 .fonte-small {
     font-size: 0.999rem;
     letter-spacing: -0.45px;

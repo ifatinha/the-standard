@@ -1,6 +1,7 @@
-.hotel {
+.hotel-container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 45px;
     width: 100%;
 }
 
@@ -43,12 +44,32 @@
     height: 100%;
 }
 
+.hotel-avaliacoes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+
+.avaliacao-item {
+    flex: 1 0 320px;
+    background-color: darkgrey;
+}
+
+.avaliacao-item img {
+    height: 236px;
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
-    .hotel {
+    .hotel-container {
         flex-direction: column;
     }
 
     .hotel-informacoes h2 {
-        font-size: 4rem;
+        font-size: var(--font-small);
     }
 }

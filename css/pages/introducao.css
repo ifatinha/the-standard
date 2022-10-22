@@ -56,7 +56,7 @@
 
 @media screen and (max-width: 800px) {
     .introducao h1 {
-        font-size: 4rem;
+        font-size: var(--font-small);
     }
 
     aside ul {
