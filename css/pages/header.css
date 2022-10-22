@@ -22,25 +22,26 @@
 }
 
 .dropdown {
+    display: inline-block;
     min-width: 150px;
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
-    position: absolute;
     background-color: var(--white);
     display: none;
-    min-width: 160px;
+    min-width: 100px;
+    position: absolute;
     z-index: 1;
 }
 
 .dropdown-content a {
     color: var(--dark);
     display: block;
-    padding: 3px 22px;
     font-size: 0.937em;
     font-weight: 700;
+    text-align: center;
+    padding: 3px 22px;
 }
 
 .dropdown-content a:hover {
@@ -53,7 +54,6 @@
 }
 
 .header .menu-mobile {
-    background-color: rgba(0, 0, 0, .4);
     display: none;
     float: right;
     padding: 5px;
