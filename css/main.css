@@ -1,0 +1,10 @@
+/* Generics CSS */
+@import "./global/minireset.min.css";
+@import "./global/generics.css";
+
+/* Tipografias */
+@import "./util/cores.css";
+
+/* CSS Header */
+@import "./pages/header.css";
+@import "./pages/introducao.css";

@@ -1,0 +1,25 @@
+.introducao {
+    background-image: url("../../assets/img/the-standard-cpcreatives148.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.introducao h1 {
+    bottom: 0;
+    color: var(--white);
+    font-size: 7.625rem;
+    font-weight: 700;
+    left: 15px;
+    letter-spacing: -0.45;
+    position: absolute;
+    text-align: left;
+}
+
+.introducao aside {
+    top: 50vh;
+    right: 0;
+    position: absolute;
+}
