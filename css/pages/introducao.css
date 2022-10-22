@@ -37,7 +37,7 @@
     letter-spacing: -0.51px;
     line-height: 17px;
     padding: 20px 16px;
-    position: absolute;
+    position: fixed;
     right: 15px;
     transition: .3s;
     width: 75px;
@@ -47,7 +47,7 @@
 .introducao-botao a {
     color: var(--white);
     font-weight: 700;
-    
+
 }
 
 .introducao-botao:hover {

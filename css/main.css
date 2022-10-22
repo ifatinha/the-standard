@@ -4,7 +4,9 @@
 
 /* Tipografias */
 @import "./util/cores.css";
+@import "./util/tipografias.css";
 
 /* CSS Header */
 @import "./pages/header.css";
 @import "./pages/introducao.css";
+@import "./pages/hotel.css";

@@ -1,0 +1,54 @@
+.hotel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hotel-informacoes {
+    color: var(--red);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+}
+
+.hotel-horario {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-horario time {
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.hotel-informacoes a {
+    color: inherit;
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.hotel-informacoes h2 {
+    font-size: 5.75rem;
+    margin: 15px 0 7px;
+}
+
+.hotel-imagem {
+    flex: 2;
+}
+
+.hotel-imagem img {
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .hotel {
+        flex-direction: column;
+    }
+
+    .hotel-informacoes h2 {
+        font-size: 4rem;
+    }
+}
