@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="assets/icons/the-standard.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 
@@ -45,7 +46,7 @@
                         <li><a href="./" class="caixa-alta">Bangkok</a></li>
                         <li><a href="./" class="caixa-alta">East Village, NYC</a></li>
                         <li><a href="./" class="caixa-alta">London</a></li>
-                        <li><a href="./" class="caixa-alta">Maldives</a></li>
+                        <li><a href="./" class="caixa-alta selecionado">Maldives</a></li>
                         <li><a href="./" class="caixa-alta">Miami Beach</a></li>
                         <li><a href="./" class="caixa-alta">High Line, NYC</a></li>
                         <li><a href="./" class="caixa-alta">Hollywood</a></li>
@@ -121,27 +122,46 @@
         </div>
         <div class="hotel-avaliacoes">
             <div class="avaliacao-item">
-                <h3>“Top 10 destinos para 2022.”</h3>
-                <p>Conde Nast Traveler India</p>
-                <div class="circlo"></div>
-                <div class="circlo"></div>
-                <div class="circlo"></div>
-                <div class="circlo"></div>
+                <h3 class="caixa-alta avalicao-titulo">“Top 10 destinos para 2022.”</h3>
+                <p class="avaliacao-autor">Conde Nast Traveler India</p>
+                <ul class="circulos">
+                    <li class="circulo fonte-small"></li>
+                    <li class="circulo fonte-small"></li>
+                    <li class="circulo fonte-small"></li>
+                    <li class="circulo fonte-small"></li>
+                </ul>
             </div>
-            <div class="avaliacao-item">
-                <img src="assets/img/avaliacao-img-01.jpg" alt="Imagem de pessoas fazendo um brind" width="476px"
-                    height="236px">
+            <div class="avaliacao-item avaliacao-bg">
                 <h3>Seja festivo nas Maldivas</h3>
-                <a href="./">Saiba Mais</a>
+                <a href="./" class="btn-padrao fonte-small">Leia Mais</a>
             </div>
-            <div class="avaliacao-item">
-                <img src="assets/img/avaliacao-img-02.jpg" alt="Imagem de pessoas em um barco pescando" width="476px"
-                    height="236px">
+            <div class="avaliacao-item avaliacao-bg">
                 <h3>15 obrigações absolutas nas Maldivas</h3>
-                <a href="./">Saiba Mais</a>
+                <a href="./" class="btn-padrao fonte-small">Ver Mais</a>
             </div>
         </div>
     </section>
+    <article class="hotel-slide">
+        <ul class="imagem-slide">
+            <li><img src="./assets/img/maldives_01.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_02.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_03.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_04.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_05.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_06.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_07.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_08.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+            <li><img src="./assets/img/maldives_09.jpg" alt="Maldives Beach" width="1280" height="450"></li>
+        </ul>
+        <!-- <ul class="circulos">
+            <li><i class="fa-solid fa-angle-left"></i></li>
+            <li class="circulo fonte-small"></li>
+            <li class="circulo fonte-small"></li>
+            <li class="circulo fonte-small"></li>
+            <li class="circulo fonte-small"></li>
+            <li><i class="fa-solid fa-angle-right"></i></li>
+        </ul> -->
+    </article>
     <!--
     <div class="container-residencias">
         <div class="container-residencias__textos">

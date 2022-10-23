@@ -26,3 +26,51 @@ a {
 .links:hover {
     color: var(--red);
 }
+
+.selecionado {
+    background-color: var(--red);
+}
+
+.circulos {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.circulos li:first-of-type,
+.circulos li:last-of-type {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.circulos .circulo {
+    border-radius: 50%;
+    border: 1px solid var(--red);
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.circulos .circulo:nth-child(1) {
+    background-color: var(--red);
+}
+
+.btn-padrao {
+    color: var(--red);
+    background-color: var(--white);
+    border: 1px solid var(--red);
+    box-shadow: var(--red) 3.75px 3.75px 0px 0px;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 19.5px;
+    padding: 5px 11px;
+    text-align: center;
+    transition: .3s;
+}
+
+.btn-padrao:hover {
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: var(--white) 3.75px 3.75px 0px 0px;
+}
