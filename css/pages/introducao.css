@@ -26,6 +26,7 @@
     right: 15px;
     position: fixed;
     text-align: right;
+    z-index: 2;
 }
 
 .introducao-botao {
@@ -48,7 +49,6 @@
 .introducao-botao a {
     color: var(--white);
     font-weight: 700;
-
 }
 
 .introducao-botao:hover {

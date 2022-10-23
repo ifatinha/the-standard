@@ -117,19 +117,6 @@
     text-align: left;
 }
 
-.hotel-slide {
-    background-color: darkcyan;
-    height: 450px;
-    margin-bottom: 45px;
-    width: 100%;
-    z-index: -1;
-}
-
-.hotel-slide ul li img {
-
-    width: 100%;
-}
-
 @media screen and (max-width: 800px) {
     .hotel-container {
         flex-direction: column;
