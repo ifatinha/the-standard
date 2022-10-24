@@ -4,14 +4,43 @@
     font-weight: 700;
     letter-spacing: var(--espacameto-letras);
     line-height: 92px;
-    margin-bottom: 7.7px;
+    margin-bottom: 15px;
     padding-left: 15px;
     text-align: left;
 }
 
+.degustacao-item {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.degustao-texto {
+    flex: 1;
+    background-color: darkblue;
+}
+
+.degustacao-img {
+    flex: 2;
+    background-color: darkgreen;
+}
+
+.degustacao-img img {
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
+
     .degustacao-titulo {
         font-size: var(--font-small);
         line-height: normal;
+    }
+
+    .degustacao-item {
+        flex-direction: column;
     }
 }
