@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
 
 .caixa-alta {
@@ -193,12 +194,12 @@ a {
         flex-direction: column;
     }
 
-    .container-texto h2 {
-        font-size: var(--font-small);
-    }
-
     .container-direita .container-img-info h2 {
         font-size: var(--font-h3);
         line-height: normal;
+    }
+
+    .container-texto h2 {
+        font-size: var(--font-small);
     }
 }
