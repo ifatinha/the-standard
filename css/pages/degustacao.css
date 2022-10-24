@@ -1,0 +1,17 @@
+.degustacao-titulo {
+    color: var(--red);
+    font-size: 5.75rem;
+    font-weight: 700;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 92px;
+    margin-bottom: 7.7px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .degustacao-titulo {
+        font-size: var(--font-small);
+        line-height: normal;
+    }
+}
