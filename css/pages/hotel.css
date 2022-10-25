@@ -19,21 +19,37 @@
     flex-direction: column;
 }
 
+.hotel-horario span {
+    font-size: 0.937rem;
+    font-weight: 500;
+}
+
 .hotel-horario time {
-    font-size: 1.6rem;
-    line-height: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: var(--espacameto-letras);
+    margin-bottom: 7.5px;
 }
 
 .hotel-informacoes a {
     color: inherit;
+    font-size: 0.937rem;
+    font-weight: 500;
     line-height: 20px;
     text-decoration: underline;
 }
 
 .hotel-informacoes h2 {
-    font-size: 5.75rem;
-    margin: 15px 0 7px;
+    font-size: 5.6rem;
+    font-weight: 600;
+    letter-spacing: var(--espacameto-letras);
+    margin: 10px 0 7px;
+}
+
+.hotel-informacoes .hotel-descricao{
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .hotel-imagem {
