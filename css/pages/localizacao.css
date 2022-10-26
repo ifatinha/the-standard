@@ -36,4 +36,34 @@
     text-align: center;
 }
 
+.localizacao-info {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.localizacao-info .localizacao-contato {
+    border-bottom: 1px solid #dee2e6 !important;
+    padding: 15px;
+    text-align: center;
+}
+
+.localizacao-contato h6 {
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 15px;
+    margin-bottom: 7.5px;
+    text-transform: uppercase;
+}
+
+.localizacao-contato a {
+    color: var(--dark);
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 19.5px;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 800px) {}
