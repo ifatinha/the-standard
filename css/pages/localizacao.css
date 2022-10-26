@@ -105,12 +105,31 @@
     text-align: left;
 }
 
-.formulario {
-    
+.col-100 {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.col-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.formulario-item {
+    margin-bottom: 15px;
 }
 
 .formulario-item input {
     width: 100%;
+}
+
+.formulario-item #paises {
+    width: 50%;
+}
+
+.formulario-item #estados,
+.formulario-item #cidade {
+    flex: 1;
 }
 
 @media screen and (max-width: 800px) {}
