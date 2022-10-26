@@ -1,0 +1,39 @@
+.container-localizacao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: center;
+    margin-bottom: 45px;
+    padding: 0 2%;
+    width: 100%;
+}
+
+.localizacao-bg {
+    background: url("../../assets/img/seaplane.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.localizaca-bg-mapa {
+    background: url("../../assets/img/property-maldives-resort-map.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.container-localizacao h2 {
+    font-size: 2.35rem;
+    font-weight: 600;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 39px;
+    margin-bottom: 7.5px;
+    text-align: center;
+}
+
+.container-localizacao p {
+    font-size: 0.937rem;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 19px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {}
