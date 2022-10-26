@@ -89,6 +89,7 @@
     color: var(--red);
     display: flex;
     font-size: 1.125rem;
+    font-weight: 500;
     letter-spacing: var(--espacameto-letras);
     line-height: 24.375px;
     text-align: left;
@@ -126,7 +127,7 @@
 .avaliacao-bg h3 {
     color: var(--white);
     font-size: var(--font-h3);
-    font-weight: var(--font-negrito);
+    font-weight: 600;
     letter-spacing: var(--espacameto-letras);
     line-height: 34px;
     margin-bottom: 7.5px;

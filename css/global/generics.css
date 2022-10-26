@@ -64,6 +64,8 @@ a {
 }
 
 .btn-padrao {
+    font-size: 0.917rem;
+    font-weight: 600;
     letter-spacing: var(--espacameto-letras);
     line-height: 19.5px;
     padding: 5px 11px;
@@ -84,6 +86,19 @@ a {
     box-shadow: var(--white) 3.75px 3.75px 0px 0px;
 }
 
+.btn-padrao-yellow {
+    color: var(--white);
+    background-color: var(--yellow);
+    border: 1px solid var(--white);
+    box-shadow: var(--white) 3.75px 3.75px 0px 0px;
+}
+
+.btn-padrao-yellow:hover {
+    background-color: var(--white);
+    color: var(--yellow);
+    box-shadow: var(--yellow) 3.75px 3.75px 0px 0px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -101,14 +116,22 @@ a {
     background-color: var(--red);
 }
 
+.container-yellow {
+    background-color: var(--yellow);
+}
+
+.container-white {
+    background-color: var(--white);
+}
+
 .container-texto {
     padding: 15px;
 }
 
 .container-texto h2 {
     color: var(--white);
-    font-size: var(--font-subtitulos);
-    font-weight: var(--font-negrito);
+    font-size: 5rem;
+    font-weight: 600;
     letter-spacing: var(--espacameto-letras);
     margin-bottom: 7.5px;
     text-align: left;
@@ -116,6 +139,8 @@ a {
 
 .container-texto p {
     color: var(--white);
+    font-size: 0.937rem;
+    font-weight: 500;
     line-height: 19.5px;
     margin-bottom: 30px;
     text-align: left;
@@ -130,8 +155,8 @@ a {
     cursor: pointer;
     display: flex;
     flex-basis: 100%;
-    font-size: 1.56rem;
-    font-weight: var(--font-negrito);
+    font-size: 1.26rem;
+    font-weight: 500;
     letter-spacing: -0.73125px;
     line-height: 24.375px;
     justify-content: space-between;
@@ -144,7 +169,7 @@ a {
 
 .container-menu a:hover {
     background-color: var(--white);
-    color: var(--red);
+    color: var(--dark);
 }
 
 .container .container-direita {
@@ -163,7 +188,6 @@ a {
 }
 
 .container-direita .container-img-info h2 {
-    color: var(--red);
     font-size: 4.5rem;
     font-weight: 700;
     letter-spacing: var(--espacameto-letras);
@@ -173,21 +197,33 @@ a {
 }
 
 .container-direita .container-img-info p {
-    color: var(--red);
+    font-size: 0.967rem;
     margin-bottom: 15px;
     max-width: 350px;
     line-height: 19.5px;
     width: 100%;
 }
 
-.container-direita .container-img-info span {
-    color: var(--red);
-}
-
 .container-direita .container-img-btn {
     align-items: center;
     display: flex;
     gap: 30px;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+.negrito-500 {
+    font-weight: 500;
+}
+
+.texto-red {
+    color: var(--red);
+}
+
+.texto-white {
+    color: var(--white);
 }
 
 @media screen and (max-width: 800px) {
@@ -201,6 +237,6 @@ a {
     }
 
     .container-texto h2 {
-        font-size: var(--font-small);
+        font-size: 3rem;
     }
 }
