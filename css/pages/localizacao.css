@@ -56,7 +56,11 @@
     text-transform: uppercase;
 }
 
-.localizacao-contato a {
+.localizacao-contato .contato-email {
+    margin-bottom: 7.5px;
+}
+
+.localizacao-contato .contato-email a {
     color: var(--dark);
     display: block;
     font-size: 0.9rem;
@@ -64,6 +68,49 @@
     letter-spacing: var(--espacameto-letras);
     line-height: 19.5px;
     text-decoration: underline;
+}
+
+.localizacao-contato .contato-redes-sociais a {
+    color: var(--red);
+    transition: .3s;
+}
+
+.localizacao-contato .contato-redes-sociais a:hover {
+    color: var(--dark);
+}
+
+.localizacao-formulario {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 15px 2%;
+    width: 100%;
+}
+
+.localizacao-formulario h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 35px;
+    margin-bottom: 7.5px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.localizacao-formulario p {
+    color: var(--dark);
+    font-size: 00.937rem;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 19.5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formulario {
+    
+}
+
+.formulario-item input {
+    width: 100%;
 }
 
 @media screen and (max-width: 800px) {}

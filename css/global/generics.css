@@ -226,6 +226,15 @@ a {
     color: var(--white);
 }
 
+.col-100 {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.col-50 {
+    width: 50%;
+}
+
 @media screen and (max-width: 800px) {
     .container {
         flex-direction: column;
