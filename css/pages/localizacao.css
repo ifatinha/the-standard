@@ -46,7 +46,7 @@
     text-align: center;
 }
 
-.localizacao-contato h6 {
+.localizacao-contato h2 {
     color: var(--dark);
     font-size: 0.9rem;
     font-weight: 700;
@@ -75,14 +75,18 @@
     transition: .3s;
 }
 
-.localizacao-contato .contato-redes-sociais a:hover {
-    color: var(--dark);
+.localizacao-contato .contato-redes-sociais a i {
+    transition: .3s;
+}
+
+.localizacao-contato .contato-redes-sociais a:hover i {
+    transform: scale(1.2);
 }
 
 .localizacao-formulario {
     margin: 0 auto;
     max-width: 1000px;
-    padding: 15px 2%;
+    padding: 15px 4%;
     width: 100%;
 }
 
@@ -98,38 +102,54 @@
 
 .localizacao-formulario p {
     color: var(--dark);
-    font-size: 00.937rem;
+    font-size: 0.8rem;
+    font-weight: 600;
     letter-spacing: var(--espacameto-letras);
     line-height: 19.5px;
     margin-bottom: 15px;
     text-align: left;
 }
 
-.col-100 {
-    width: 100%;
-    background-color: darkblue;
-}
-
-.col-flex {
-    display: flex;
-    gap: 10px;
-}
-
 .formulario-item {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
-.formulario-item input {
-    width: 100%;
+.formulario-item input,
+.formulario-item select {
+    background-color: var(--white);
+    border: 0;
+    border-bottom: 1px solid var(--red);
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    flex: 1 0 200px;
+    letter-spacing: var(--espacameto-letras);
+    line-height: 20px;
+    outline: none;
+    padding: 5px 11px 5px 0px;
 }
 
-.formulario-item #paises {
-    width: 50%;
+.formulario-item select#paises {
+    /* flex-basis: 250px; */
 }
 
-.formulario-item #estados,
-.formulario-item #cidade {
-    flex: 1;
+.formulario-item select option {
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.formulario-termos:last-of-type {
+    margin-bottom: 15px;
+}
+
+.formulario-termos label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 7.5px;
 }
 
 @media screen and (max-width: 800px) {}

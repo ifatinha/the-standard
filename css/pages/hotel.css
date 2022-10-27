@@ -140,6 +140,6 @@
     }
 
     .hotel-informacoes h2 {
-        font-size: var(--font-small);
+        font-size: 3.5rem;
     }
 }
