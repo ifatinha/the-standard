@@ -24,6 +24,11 @@
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    transition: .3s;
+}
+
+.footer-menu a:hover {
+    color: var(--black);
 }
 
 .container-footer p {
