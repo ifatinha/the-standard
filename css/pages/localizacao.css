@@ -133,10 +133,6 @@
     padding: 5px 11px 5px 0px;
 }
 
-.formulario-item select#paises {
-    /* flex-basis: 250px; */
-}
-
 .formulario-item select option {
     font-size: 0.9rem;
     word-break: break-all;
@@ -147,7 +143,7 @@
 }
 
 .formulario-termos label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     margin-bottom: 7.5px;
 }
