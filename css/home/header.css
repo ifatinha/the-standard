@@ -53,21 +53,11 @@
 
 .header .menu-mobile {
     display: none;
-    float: right;
-    padding: 5px;
 }
 
-.header .menu-mobile .line,
-.header .menu-mobile .line1,
-.header .menu-mobile .line2 {
-    background-color: var(--white);
-    border-radius: 4px;
-    height: 4px;
-    width: 28px;
-}
-
-.header .menu-mobile .line1 {
-    margin: 5px 0;
+.header .menu-mobile a i {
+    color: var(--red);
+    font-size: 1.8rem;
 }
 
 @media screen and (max-width: 800px) {

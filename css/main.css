@@ -6,11 +6,14 @@
 @import "./util/cores.css";
 @import "./util/tipografias.css";
 
-/* CSS Header */
-@import "./pages/header.css";
-@import "./pages/introducao.css";
-@import "./pages/hotel.css";
-@import "./pages/carrossel.css";
-@import "./pages/degustacao.css";
-@import "./pages/localizacao.css";
-@import "./pages/footer.css";
+/* CSS Pagina Inicial */
+@import "./home/header.css";
+@import "./home/introducao.css";
+@import "./home/hotel.css";
+@import "./home/carrossel.css";
+@import "./home/degustacao.css";
+@import "./home/localizacao.css";
+@import "./home/footer.css";
+
+/* Páginas */
+@import "../css/pages/residencias.css";
