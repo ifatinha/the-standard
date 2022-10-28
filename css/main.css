@@ -6,6 +6,9 @@
 @import "./util/cores.css";
 @import "./util/tipografias.css";
 
+/* Utilidades */
+@import "./util/artigos.css";
+
 /* CSS Pagina Inicial */
 @import "./home/header.css";
 @import "./home/introducao.css";
@@ -17,3 +20,5 @@
 
 /* Páginas */
 @import "../css/pages/residencias.css";
+@import "../css/pages/paginas-bg.css";
+@import "../css/pages/agenda.css";

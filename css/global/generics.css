@@ -226,6 +226,17 @@ a {
     color: var(--white);
 }
 
+.titulo-paginas {
+    bottom: 0;
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 700;
+    left: 15px;
+    letter-spacing: -0.45;
+    position: absolute;
+    text-align: left;
+}
+
 @media screen and (max-width: 800px) {
     .container {
         flex-direction: column;
@@ -238,5 +249,9 @@ a {
 
     .container-texto h2 {
         font-size: 3rem;
+    }
+
+    .titulo-paginas {
+        font-size: 2rem;
     }
 }
