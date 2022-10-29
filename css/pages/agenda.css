@@ -7,13 +7,14 @@
 
 .agenda-titulo {
     color: var(--red);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    left: 15px;
     letter-spacing: -0.45;
-    margin-top: 45px;
+    margin: 45px auto 0;
     padding: 0 30px;
     text-align: left;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .container-agenda {
@@ -22,13 +23,67 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
-    margin: 45px 0;
+    margin: 45px auto;
     padding: 0 2%;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .agenda-hotel {
     flex: 1 1 350px;
 }
 
+.agenda-hotel img {
+    border-radius: 4px;
+}
+
+.agenda-hotel .hotel-descricao {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.hotel-descricao h2 {
+    color: var(--red);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.hotel-descricao p,
+.hotel-preco p,
+.hotel-preco span {
+    color: var(--dark);
+    letter-spacing: var(--espacamento-letras);
+    line-height: 22px;
+}
+
+.hotel-descricao p {
+    font-size: 0.8rem;
+}
+
+.hotel-preco {
+    padding: 20px 0;
+}
+
+.hotel-preco p {
+    margin-bottom: 7.5px;
+}
+
+.hotel-preco strong {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hotel-preco span {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 15px;
+}
+
 @media screen and (max-width: 800px) {
+    .agenda-titulo {
+        font-size: 2rem;
+        padding: 0 2%;
+    }
 }
