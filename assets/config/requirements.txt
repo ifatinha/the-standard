@@ -1,0 +1,8 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+sass --watch assets/scss/_main.scss:assets/main/main.css --style compressed
+
+npm i clean-css-cli -g
+cleancss -o main.min.css main.css --with-rebase
+
+
