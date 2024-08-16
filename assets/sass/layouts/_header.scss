@@ -1,9 +1,62 @@
-@use "./../util/util";
+@use "./../global/typography";
+@use "./../global/colors";
+@use "./../global/mixins";
+@use "./../global/placeholders"as *;
 
-header {
-    background-color: darkblue;
+.header {
+    background-color: paleturquoise;
+    @include mixins.display-flex(center, space-between);
+    flex-wrap: wrap;
+    padding  : 15px;
+    position : absolute;
+    width    : 100%;
+    z-index  : 99999;
 
-    @include util.devices(l) {
-        background-color: darkcyan
+    &__logo-wrapper {
+        @include mixins.display-flex(center, center);
+        gap: 1rem;
     }
+
+    &__dropdown {
+        min-width: 150px;
+        position : relative;
+    }
+}
+
+.dropdown {
+    &__toggle {
+        @extend %links;
+        display       : inline-block;
+        text-transform: uppercase;
+        width         : 100%;
+    }
+
+    &__list {
+        background-color: lightblue;
+        background-color: map-get($map: colors.$color-palette, $key: pure-white);
+        display         : none;
+        position        : absolute;
+        width           : 100%;
+        z-index         : 2;
+
+        &-item {
+            @include typography.typography-title(14);
+            color         : map-get($map: colors.$color-palette, $key: midnight-dark);
+            display       : inline-block;
+            font-weight   : 500;
+            padding       : 5px 10px;
+            text-transform: uppercase;
+            transition    : .3s ease-in-out;
+            width         : 100%;
+
+            &:hover {
+                background-color: map-get($map: colors.$color-palette, $key: alert-red);
+                color           : map-get($map: colors.$color-palette, $key: pure-white);
+            }
+        }
+    }
+}
+
+.open-dropdown {
+    display: block;
 }

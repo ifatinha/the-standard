@@ -1,5 +1,12 @@
+@use "../global/colors";
+
 .container {
    margin   : 0 auto;
    max-width: 1200px;
    width    : 100%;
+}
+
+.active {
+   background: map-get($map: colors.$color-palette, $key: alert-red);
+   color     : map-get($map: colors.$color-palette, $key: pure-white) !important;
 }

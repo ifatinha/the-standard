@@ -17,42 +17,42 @@
 
 <body>
     <header class="header">
-        <div>
-            <a href="./index.html"><img src="assets/img/logo-main.svg" alt="The Standard Logo" width="190"
-                    height="48"></a>
-            <div class="dropdown">
-                <a href="./" class="links">
+        <div class="header__logo-wrapper">
+            <a href="./index.html" class="header__logo-link">
+                <img src="assets/img/logo-main.svg" alt="The Standard Logo" width="190" height="48">
+            </a>
+            <div class="header__dropdown dropdown" id="dropdown">
+                <a href="#" class="dropdown__toggle" id="button-dropdown">
                     Maldives
                     <i class='fas fa-caret-down'></i>
                 </a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="./" class="links">Ibiza</a></li>
-                        <li><a href="./" class="links">Hua Hin</a></li>
-                        <li><a href="./" class="links">Bangkok</a></li>
-                        <li><a href="./" class="links">East Village, NYC</a></li>
-                        <li><a href="./" class="links">London</a></li>
-                        <li><a href="./" class="selecionado links">Maldives</a></li>
-                        <li><a href="./" class="links">Miami Beach</a></li>
-                        <li><a href="./" class="links">High Line, NYC</a></li>
-                        <li><a href="./" class="links">Hollywood</a></li>
-                    </ul>
-                </div>
+
+                <ul class="dropdown__list" id="dropdown-list">
+                    <li><a href="./" class="dropdown__list-item">Ibiza</a></li>
+                    <li><a href="./" class="dropdown__list-item">Hua Hin</a></li>
+                    <li><a href="./" class="dropdown__list-item">Bangkok</a></li>
+                    <li><a href="./" class="dropdown__list-item">East Village, NYC</a></li>
+                    <li><a href="./" class="dropdown__list-item">London</a></li>
+                    <li><a href="./" class="dropdown__list-item active">Maldives</a></li>
+                    <li><a href="./" class="dropdown__list-item">Miami Beach</a></li>
+                    <li><a href="./" class="dropdown__list-item">High Line, NYC</a></li>
+                    <li><a href="./" class="dropdown__list-item">Hollywood</a></li>
+                </ul>
             </div>
         </div>
 
-        <nav class="header-nav">
-            <ul>
-                <li><a href="./pages/agenda.html" class="links">Reserve agora</a></li>
-                <li><a href="./pages/cultura.html" class="links">Cultura</a></li>
-                <li><a href="./pages/ofertas.html" class="links">Ofertas</a></li>
-                <li><a href="./pages/acontecimentos.html" class="links">Acontecimentos</a></li>
-                <li><a href="./pages/reunioes.html" class="links">Reuniões e eventos</a></li>
-                <li><a href="./pages/proximosHoteis.html" class="links">Próximos hotéis</a></li>
-                <li><a href="./pages/residencias.html" class="links">Residências</a></li>
-                <li><a href="./pages/comprar.html" class="links">Comprar</a></li>
-                <li><a href="./pages/especial.html" class="links">Especial</a></li>
-                <li><a href="./pages/theStandard.html" class="links">The Standard</a></li>
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li><a href="./pages/agenda.html" class="header__nav-item links">Reserve agora</a></li>
+                <li><a href="./pages/cultura.html" class="header__nav-item links">Cultura</a></li>
+                <li><a href="./pages/ofertas.html" class="header__nav-item links">Ofertas</a></li>
+                <li><a href="./pages/acontecimentos.html" class="header__nav-item links">Acontecimentos</a></li>
+                <li><a href="./pages/reunioes.html" class="header__nav-item links">Reuniões e eventos</a></li>
+                <li><a href="./pages/proximosHoteis.html" class="header__nav-item links">Próximos hotéis</a></li>
+                <li><a href="./pages/residencias.html" class="header__nav-item links">Residências</a></li>
+                <li><a href="./pages/comprar.html" class="header__nav-item links">Comprar</a></li>
+                <li><a href="./pages/especial.html" class="header__nav-item links">Especial</a></li>
+                <li><a href="./pages/theStandard.html" class="header__nav-item links">The Standard</a></li>
             </ul>
         </nav>
 
@@ -578,6 +578,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/e9802cbe06.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/main.js" defer></script>
 </body>
 
 </html>

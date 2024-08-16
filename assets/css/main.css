@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -95,6 +97,36 @@ a {
   text-decoration: none;
 }
 
+/* Fontes */
+/* Função para calcular rem */
+/* Tamanhos tipográficos */
+/* Mixin de tipografia para títulos */
+/* Mixin de tipografia para textos */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.active {
+  background: #ee2324;
+  color: #ffffff !important;
+}
+
+.dropdown__toggle {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: -0.45px;
+  line-height: 1;
+  padding: 7.5px;
+  transition: 0.3s ease-in-out;
+}
+.dropdown__toggle:hover {
+  color: #ee2324;
+}
+
 .menu-bugger {
   background: transparent;
   border: none;
@@ -151,13 +183,59 @@ a {
   transform: rotate(-45deg);
 }
 
-header {
-  background-color: darkblue;
+.header {
+  background-color: paleturquoise;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
 }
-@media screen and (min-width: 1024px) {
-  header {
-    background-color: darkcyan;
-  }
+.header__logo-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.header__dropdown {
+  min-width: 150px;
+  position: relative;
+}
+
+.dropdown__toggle {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100%;
+}
+.dropdown__list {
+  background-color: lightblue;
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.dropdown__list-item {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.875rem;
+  color: #343a40;
+  display: inline-block;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+.dropdown__list-item:hover {
+  background-color: #ee2324;
+  color: #ffffff;
+}
+
+.open-dropdown {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
