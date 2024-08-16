@@ -1,3 +1,17 @@
 @use "sass:map";
 
-$theme-color:();
+$color-palette: (
+  primary-blue: #007bff,
+  deep-indigo: #6610f2,
+  royal-purple: #6f42c1,
+  vivid-pink: #e83e8c,
+  alert-red: #ee2324,
+  vibrant-orange: #fd7e14,
+  sun-yellow: #ffc527,
+  success-green: #28a745,
+  fresh-teal: #20c997,
+  aqua-cyan: #17a2b8,
+  pure-white: #ffffff,
+  neutral-gray: #6c757d,
+  midnight-dark: #343a40
+);
