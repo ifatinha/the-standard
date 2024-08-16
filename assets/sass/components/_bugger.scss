@@ -1,0 +1,66 @@
+@use "../global/mixins";
+@use "../global/colors";
+@use "../util/queries";
+
+.menu-bugger {
+    background   : transparent;
+    border       : none;
+    color        : inherit;
+    cursor       : pointer;
+    display      : none;
+    min-height   : 28px;
+    padding-left : 0;
+    padding-right: 0;
+    transition   : .3 ease-in-out;
+
+    @include queries.devices(t) {
+        @include mixins.display-flex(center, center);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__bars {
+        background: map-get($map: colors.$color-palette, $key: pure-white);
+        display   : block;
+        height    : 4px;
+        position  : relative;
+        transition: .3s ease-in-out;
+        width     : 34px;
+
+        &::before,
+        &::after {
+            background: map-get($map: colors.$color-palette, $key: pure-white);
+            content   : "";
+            display   : block;
+            height    : 100%;
+            left      : 0;
+            position  : absolute;
+            transition: .3s ease-in-out;
+            width     : 100%;
+        }
+
+        &::before {
+            transform: translate(0, -12px);
+        }
+
+        &::after {
+            transform: translate(0, 12px);
+        }
+    }
+}
+
+.menu-open {
+    .menu-bugger__bars {
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

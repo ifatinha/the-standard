@@ -95,6 +95,62 @@ a {
   text-decoration: none;
 }
 
+.menu-bugger {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: none;
+  min-height: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: 0.3 ease-in-out;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-bugger {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.menu-bugger:focus {
+  outline: none;
+}
+.menu-bugger__bars {
+  background: #ffffff;
+  display: block;
+  height: 4px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  width: 34px;
+}
+.menu-bugger__bars::before, .menu-bugger__bars::after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+.menu-bugger__bars::before {
+  transform: translate(0, -12px);
+}
+.menu-bugger__bars::after {
+  transform: translate(0, 12px);
+}
+
+.menu-open .menu-bugger__bars {
+  background: transparent;
+}
+.menu-open .menu-bugger__bars::before {
+  transform: rotate(45deg);
+}
+.menu-open .menu-bugger__bars::after {
+  transform: rotate(-45deg);
+}
+
 header {
   background-color: darkblue;
 }

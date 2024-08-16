@@ -9,29 +9,17 @@
     <meta name="author" content="Fatinha de Sousa">
     <meta name="keywords" content="hotel, Standard, maldives">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="assets/icons/the-standard.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <title>The Standard | Maldives</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="./index.html"><img src="assets/img/logo-main.svg" alt="The Standard Logo" width="190" height="48"></a>
-        <div class="header-menu">
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="./pages/agenda.html" class="links">Agende agora</a></li>
-                    <li><a href="./pages/cultura.html" class="links">Cultura</a></li>
-                    <li><a href="./pages/especial.html" class="links">Especial</a></li>
-                    <li><a href="./pages/acontecimentos.html" class="links">Acontecimentos</a></li>
-                    <li><a href="./pages/residencias.html" class="links">Residências</a></li>
-                </ul>
-            </nav>
+        <div>
+            <a href="./index.html"><img src="assets/img/logo-main.svg" alt="The Standard Logo" width="190"
+                    height="48"></a>
             <div class="dropdown">
                 <a href="./" class="links">
                     Maldives
@@ -53,9 +41,26 @@
             </div>
         </div>
 
-        <div class="menu-mobile">
-            <a href="./"><i class="fa-solid fa-bars"></i></a>
-        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="./pages/agenda.html" class="links">Reserve agora</a></li>
+                <li><a href="./pages/cultura.html" class="links">Cultura</a></li>
+                <li><a href="./pages/ofertas.html" class="links">Ofertas</a></li>
+                <li><a href="./pages/acontecimentos.html" class="links">Acontecimentos</a></li>
+                <li><a href="./pages/reunioes.html" class="links">Reuniões e eventos</a></li>
+                <li><a href="./pages/proximosHoteis.html" class="links">Próximos hotéis</a></li>
+                <li><a href="./pages/residencias.html" class="links">Residências</a></li>
+                <li><a href="./pages/comprar.html" class="links">Comprar</a></li>
+                <li><a href="./pages/especial.html" class="links">Especial</a></li>
+                <li><a href="./pages/theStandard.html" class="links">The Standard</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-bugger" type="button" id="menu-bugger" aria-controls="modal-menu" aria-label="Abrir menu"
+            aria-expanded="false" aria-haspopup="true">
+            <span class="visually-hidden">Menu</span>
+            <i class="menu-bugger__bars" aria-hidden="true"></i>
+        </button>
     </header>
 
     <main class="introducao">
