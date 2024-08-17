@@ -1,9 +1,9 @@
 export const initializeMenu = () => {
     const buttonBugger = document.querySelector("#menu-bugger");
     const buttonModalClose = document.querySelector("#modal-close");
-    const modalMenu = document.querySelector("#header-modal");
+    const modalMenu = document.querySelector("#modal");
 
-    if (!buttonBugger || !buttonModalClose || modalMenu) return;
+    if (!buttonBugger || !buttonModalClose || !modalMenu) return;
 
     const updateAriaAtributes = (isOpen) => {
         buttonBugger.setAttribute("aria-expanded", true);
@@ -28,9 +28,7 @@ export const initializeMenu = () => {
     };
 
     const toggleMenu = (event) => {
-        console.log(buttonModalClose)
-        console.log(modalMenu);
-        
+
         if (event?.type === "touchstart") event.preventDefault();
 
         toggleClass(buttonBugger, "menu-open");

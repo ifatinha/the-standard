@@ -1,16 +1,66 @@
 @use "../global/colors";
 @use "../global/typography";
 @use "../util/queries";
+@use "../global/mixins";
+@use "../global/placeholders"as *;
 
-// .header__modal {
-//     background-color: cadetblue;
-//     height          : 100%;
-//     inset           : 0;
-//     position        : fixed;
-//     transition      : .4s ease-in-out;
-//     width           : 100%;
-// }
+.modal {
+    @include mixins.display-flex(start, space-between);
+    background    : rgba(255, 255, 255, 0.96);
+    flex-direction: column;
+    height        : 0;
+    inset         : 0;
+    overflow      : auto;
+    position      : fixed;
+    transition    : .3s ease-in-out;
+    width         : 100%;
+    z-index       : 9999;
 
-.open-modal {
-    height: 100%;
+    &__menu {
+        @include mixins.display-flex(center, space-between);
+        padding: 15px;
+        width  : 100%
+    }
+
+    &__content {
+        flex   : 1;
+        padding: 15px;
+        width  : 100%;
+    }
+
+    &__link {
+        @include typography.typography-title(34);
+        @extend %modal-links;
+        color: map-get($map: colors.$color-palette, $key: alert-red);
+    }
+
+    &-open {
+        height: 100%;
+    }
+
+    &-close {
+        @include mixins.display-flex(center, center);
+        border    : none;
+        cursor    : pointer;
+        min-height: 50px;
+
+        img {
+            height: 20px;
+            width : 20px;
+        }
+    }
+
+    &__dropdown-list {
+        display   : none;
+        transition: .3s ease-in-out;
+    }
+
+    &__dropdown-open {
+        display: block;
+    }
+
+    &__dropdown-link {
+        @include typography.typography-title(28);
+        @extend %modal-links;
+    }
 }
