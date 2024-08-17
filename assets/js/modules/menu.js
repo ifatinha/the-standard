@@ -3,7 +3,7 @@ export const initializeMenu = () => {
     const buttonModalClose = document.querySelector("#modal-close");
     const modalMenu = document.querySelector("#header-modal");
 
-    if (!buttonBugger) return;
+    if (!buttonBugger || !buttonModalClose || modalMenu) return;
 
     const updateAriaAtributes = (isOpen) => {
         buttonBugger.setAttribute("aria-expanded", true);
