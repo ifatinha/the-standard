@@ -28,6 +28,9 @@ export const initializeMenu = () => {
     };
 
     const toggleMenu = (event) => {
+        console.log(buttonModalClose)
+        console.log(modalMenu);
+        
         if (event?.type === "touchstart") event.preventDefault();
 
         toggleClass(buttonBugger, "menu-open");
