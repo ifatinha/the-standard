@@ -1,6 +1,12 @@
-# Projeto de Website de Hotel
+#  The Standard Clone
 
-Um projeto de clone simples do site do hotel The Standard, Maldives, desenvolvido utilizando HTML, CSS, SCSS e JavaScript. Este projeto visa recriar a aparência e funcionalidade básicas do site como um exercício de desenvolvimento front-end.
+Um projeto de clone simples do site do hotel [The Standard, Maldives](https://www.standardhotels.com/maldives), desenvolvido utilizando HTML, CSS, SCSS e JavaScript. Este projeto visa recriar a aparência e funcionalidade básicas do site como um exercício de desenvolvimento front-end.
+
+## Tecnologias Utilizadas
+
+- **HTML**: Para estruturar o conteúdo da página.
+- **SCSS**: Para estilizar o projeto com recursos avançados de CSS.
+- **JavaScript**: Para adicionar interatividade e funcionalidades dinâmicas.
 
 ## Estrutura de Pastas
 
@@ -9,21 +15,25 @@ Abaixo está uma descrição da estrutura de pastas do projeto:
 ```plaintext
 /
 ├── assets/                 # Contém todos os recursos do projeto
-│   ├── config/             # Arquivos de configuração (ex: JSON, YAML)
-│   ├── css/                # Arquivos CSS utilizados pelo projeto
+│   ├── config/             # Arquivos de configuração com os pacotes que devem ser instalados
+│   ├── css/                # Diretório para arquivos CSS compilados a partir do SCSS.
 │   ├── icons/              # Ícones utilizados no projeto
 │   ├── images/             # Imagens do projeto
-│   ├── img/                # Pasta adicional de imagens, pode ser para outro propósito específico
-│   ├── js/                 # Arquivos JavaScript do projeto
-│   ├── pages/              # Páginas HTML adicionais
+│   ├── js/                 # Arquivos JavaScript
 │   ├── sass/               # Arquivos Sass para estilização
 │   └── videos/             # Vídeos utilizados no projeto
 │
-├── css/                    # Diretório para arquivos CSS compilados
-├── pages/                  # Páginas HTML principais do projeto
-├── index.html              # Página inicial do projeto
+├── pages/                  # Páginas HTML principais do site
+├── index.html              # Página inicial
 └── README.md               # Este arquivo
 
 ```
 
+## Instalação e Execução
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/seu-usuario/starbucks-clone.git
+    ```
 
