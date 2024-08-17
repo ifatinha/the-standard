@@ -10,3 +10,7 @@
    background: map-get($map: colors.$color-palette, $key: alert-red);
    color     : map-get($map: colors.$color-palette, $key: pure-white) !important;
 }
+
+.open-dropdown {
+   display: block;
+}

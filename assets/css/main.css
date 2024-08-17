@@ -113,7 +113,11 @@ a {
   color: #ffffff !important;
 }
 
-.dropdown__toggle {
+.open-dropdown {
+  display: block;
+}
+
+.header__navbar-item, .dropdown__toggle {
   font-family: "Libre Franklin", sans-serif;
   font-size: 0.875rem;
   color: #ffffff;
@@ -123,7 +127,7 @@ a {
   padding: 7.5px;
   transition: 0.3s ease-in-out;
 }
-.dropdown__toggle:hover {
+.header__navbar-item:hover, .dropdown__toggle:hover {
   color: #ee2324;
 }
 
@@ -145,11 +149,18 @@ a {
     justify-content: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .menu-bugger {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
 .menu-bugger:focus {
   outline: none;
 }
 .menu-bugger__bars {
-  background: #ffffff;
+  background: #ee2324;
   display: block;
   height: 4px;
   position: relative;
@@ -157,7 +168,7 @@ a {
   width: 34px;
 }
 .menu-bugger__bars::before, .menu-bugger__bars::after {
-  background: #ffffff;
+  background: #ee2324;
   content: "";
   display: block;
   height: 100%;
@@ -183,12 +194,19 @@ a {
   transform: rotate(-45deg);
 }
 
+.visually-hidden {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 10px;
+}
+
 .header {
   background-color: paleturquoise;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 15px;
   position: absolute;
   width: 100%;
@@ -198,11 +216,42 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 .header__dropdown {
   min-width: 150px;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header__dropdown {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__dropdown {
+    display: none;
+  }
+}
+.header__navbar {
+  background-color: darkblue;
+}
+.header__navbar-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar-item {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header__navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__navbar {
+    display: none;
+  }
 }
 
 .dropdown__toggle {

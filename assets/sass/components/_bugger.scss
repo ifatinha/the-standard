@@ -1,6 +1,7 @@
 @use "../global/mixins";
 @use "../global/colors";
 @use "../util/queries";
+@use "../global/typography";
 
 .menu-bugger {
     background   : transparent;
@@ -13,7 +14,7 @@
     padding-right: 0;
     transition   : .3 ease-in-out;
 
-    @include queries.devices(t) {
+    @include queries.devices-t-and-m() {
         @include mixins.display-flex(center, center);
     }
 
@@ -22,7 +23,7 @@
     }
 
     &__bars {
-        background: map-get($map: colors.$color-palette, $key: pure-white);
+        background: map-get($map: colors.$color-palette, $key: alert-red);
         display   : block;
         height    : 4px;
         position  : relative;
@@ -31,7 +32,7 @@
 
         &::before,
         &::after {
-            background: map-get($map: colors.$color-palette, $key: pure-white);
+            background: map-get($map: colors.$color-palette, $key: alert-red);
             content   : "";
             display   : block;
             height    : 100%;
@@ -63,4 +64,12 @@
             transform: rotate(-45deg);
         }
     }
+}
+
+.visually-hidden {
+    @include typography.typography-title(18);
+    font-size   : 1.125rem;
+    font-weight : 700;
+    line-height : 1;
+    margin-right: 10px;
 }
