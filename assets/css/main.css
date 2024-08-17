@@ -202,6 +202,10 @@ a {
   margin-right: 10px;
 }
 
+.open-modal {
+  height: 100%;
+}
+
 .header {
   align-items: center;
   display: flex;
