@@ -5,12 +5,11 @@
 @use "./../util/queries";
 
 .header {
-    background-color: paleturquoise;
     @include mixins.display-flex(center, space-between);
-    padding  : 15px;
-    position : absolute;
-    width    : 100%;
-    z-index  : 99999;
+    padding : 15px;
+    position: absolute;
+    width   : 100%;
+    z-index : 99999;
 
     &__logo-wrapper {
         @include mixins.display-flex(center, center);
@@ -26,8 +25,6 @@
     }
 
     &__navbar {
-
-        background-color: darkblue;
 
         &-list {
             @include mixins.display-flex(center, space-between);
@@ -55,7 +52,6 @@
     }
 
     &__list {
-        background-color: lightblue;
         background-color: map-get($map: colors.$color-palette, $key: pure-white);
         display         : none;
         position        : absolute;

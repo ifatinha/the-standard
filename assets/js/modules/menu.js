@@ -1,7 +1,7 @@
 export const initializeMenu = () => {
     const buttonBugger = document.querySelector("#menu-bugger");
-    // const buttonModalClose = document.querySelector("#modal-close");
-    // const modalMenu = document.querySelector("#modal-menu");
+    const buttonModalClose = document.querySelector("#modal-close");
+    const modalMenu = document.querySelector("#header-modal");
 
     if (!buttonBugger) return;
 
@@ -14,33 +14,33 @@ export const initializeMenu = () => {
         element.classList.toggle(className);
     };
 
-    // const toggleModal = (event) => {
-    //     if (event?.type === "touchstart") event.preventDefault();
+    const toggleModal = (event) => {
+        if (event?.type === "touchstart") event.preventDefault();
 
-    //     const isOpenModal = modalMenu.classList.contains("modal-overlay-open");
+        const isOpenModal = modalMenu.classList.contains("modal-open");
 
-    //     if (isOpenModal) {
-    //         buttonBugger.classList.remove("menu-open");
-    //     }
+        if (isOpenModal) {
+            buttonBugger.classList.remove("menu-open");
+        }
 
-    //     toggleClass(modalMenu, "modal-overlay-open");
+        toggleClass(modalMenu, "modal-open");
 
-    // };
+    };
 
     const toggleMenu = (event) => {
         if (event?.type === "touchstart") event.preventDefault();
 
         toggleClass(buttonBugger, "menu-open");
-        // toggleModal();
+        toggleModal();
 
-        // const isOpen = modalMenu.classList.contains("modal-overlay-open");
-        // updateAriaAtributes(isOpen);
+        const isOpen = modalMenu.classList.contains("modal-open");
+        updateAriaAtributes(isOpen);
     }
 
     buttonBugger.addEventListener("click", toggleMenu);
     buttonBugger.addEventListener("touchstart", toggleMenu);
-    // buttonModalClose.addEventListener("click", toggleModal);
-    // buttonModalClose.addEventListener("touchstart", toggleModal);
+    buttonModalClose.addEventListener("click", toggleModal);
+    buttonModalClose.addEventListener("touchstart", toggleModal);
 };
 
 export default initializeMenu;

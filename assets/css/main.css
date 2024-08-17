@@ -203,7 +203,6 @@ a {
 }
 
 .header {
-  background-color: paleturquoise;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -231,9 +230,6 @@ a {
     display: none;
   }
 }
-.header__navbar {
-  background-color: darkblue;
-}
 .header__navbar-list {
   align-items: center;
   display: flex;
@@ -260,7 +256,6 @@ a {
   width: 100%;
 }
 .dropdown__list {
-  background-color: lightblue;
   background-color: #ffffff;
   display: none;
   position: absolute;
