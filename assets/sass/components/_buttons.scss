@@ -1,0 +1,30 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../global/mixins";
+@use "../animations/animations";
+@use "../util/queries";
+
+.circle-button {
+    @include typography.typography-text(14);
+    @include mixins.display-flex(center, center);
+    @include animations.heartbeat();
+    background-color: map-get($map: colors.$color-palette, $key: alert-red);
+    color           : map-get($map: colors.$color-palette, $key: pure-white);
+    border-radius   : 50%;
+    border          : 2px solid map-get($map: colors.$color-palette, $key: pure-white);
+    bottom          : 20px;
+    font-weight     : 500;
+    height          : 75px;
+    position        : fixed;
+    right           : 16px;
+    transition      : .3s ease-in-out;
+    text-align      : center;
+    text-transform  : uppercase;
+    width           : 75px;
+
+    @include queries.devices-t-and-m() {
+        @include typography.typography-text(12);
+        height : 50px;
+        width  : 50px;
+    }
+}

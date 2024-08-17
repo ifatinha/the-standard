@@ -1,0 +1,35 @@
+@use "../global/mixins";
+@use "../util//queries";
+@use "../global/colors";
+@use "../global/placeholders"as *;
+
+.aside {
+    @include mixins.display-flex(center, center);
+    height    : 100%;
+    position  : fixed;
+    right     : 16px;
+    text-align: right;
+
+    @include queries.devices-t-and-m() {
+        display: none;
+    }
+
+    &__list {
+
+        display       : flex;
+        flex-direction: column;
+
+        &-item {
+            @extend %links;
+            display       : inline-block;
+            margin-bottom : 2px;
+            padding       : 4px 8px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.active-aside_link {
+    background-color: map-get($map: colors.$color-palette, $key: pure-white);
+    color           : map-get($map: colors.$color-palette, $key: alert-red);
+}

@@ -1,14 +1,17 @@
 @use "sass:math";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-$font-primary: "Libre Franklin", sans-serif;
-$font-secondary:"Source Sans 3", sans-serif;
+$font-primary: "Libre Franklin",
+sans-serif;
+$font-secondary:"Source Sans 3",
+sans-serif;
 
 @function rem($pixel, $context: 16) {
    @return math.div($pixel, $context) * 1rem;
 }
 
 $typography-sizes: (
+   12:rem(12),
    14:rem(14),
    16:rem(16),
    18:rem(18),
@@ -16,7 +19,8 @@ $typography-sizes: (
    34:rem(34),
    36:rem(36),
    64:rem(64),
-   92:rem(92));
+   92:rem(92),
+   122:rem(122));
 
 @mixin typography-title($size) {
    font-family: $font-primary;
@@ -28,7 +32,9 @@ $typography-sizes: (
    @else {
       @warn "Size #{$size}px não está definido em $typography-sizes."
    }
-};
+}
+
+;
 
 @mixin typography-text($size) {
    font-family: $font-secondary;

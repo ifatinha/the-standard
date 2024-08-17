@@ -6,7 +6,7 @@
 
 .modal {
     @include mixins.display-flex(start, space-between);
-    background    : rgba(255, 255, 255, 0.96);
+    background    : rgba(0, 0, 0, 0.8);
     flex-direction: column;
     height        : 0;
     inset         : 0;
@@ -40,6 +40,7 @@
 
     &-close {
         @include mixins.display-flex(center, center);
+        background: transparent;
         border    : none;
         cursor    : pointer;
         min-height: 50px;
