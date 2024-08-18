@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build-css": "sass assets/sass/_main.scss:assets/css/main.css --style compressed && cleancss -o assets/main/main.min.css assets/main/main.css --with-rebase"
+    }
+}

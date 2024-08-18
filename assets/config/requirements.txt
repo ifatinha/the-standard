@@ -12,3 +12,6 @@ npm i clean-css-cli -g
 
 # Minifica o arquivo `main.css` para `main.min.css`, incluindo o rebase de URLs (se necessário).
 cleancss -o main.min.css main.css --with-rebase
+
+# Executa o script "build-css" definido no arquivo package.json.
+npm run build-css
