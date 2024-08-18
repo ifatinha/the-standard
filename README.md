@@ -40,7 +40,7 @@ Abaixo está uma descrição da estrutura de pastas do projeto:
 2. Navegue para o diretório do projeto:
 
     ```bash
-    cd projeto-hotel
+    cd the-standard
     ```
 3. Se necessário, instale as dependências
     
