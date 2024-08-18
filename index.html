@@ -133,46 +133,60 @@
         </div>
     </main>
 
-    <section id="hotel">
-        <div class="hotel-container">
-            <div class="hotel-informacoes">
-                <div class="hotel-horario">
-                    <span>Horário local</span>
-                    <time class="caixa-alta">2:59am</time>
-                    <a href="tel:+9606585555">+9606585555</a>
-                    <a href="./">Huruvalhi Island Raa Atoll</a>
-                    <a href="mailto:mv.reservations@standardhotels.com">mv.reservations@standardhotels.com</a>
+    <section id="hotel" class="hotel">
+        <div class="hotel__container">
+            <div class="hotel__container-info">
+                <div class="info__contato">
+                    <p class="info__contato-horario"><span>Horário local</span></p>
+                    <p class="info__contato-time" id="time"><time></time></p>
+                    <a class="info__contato-link" href="tel:+9606585555">+9606585555</a>
+                    <a class="info__contato-link"
+                        href="mailto:mv.reservations@standardhotels.com">mv.reservations@standardhotels.com</a>
+                    <ul class="info__contato-list">
+                        <li>
+                            <a class="info__contato-link" href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hotel__contato-link" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <h2>Overview</h2>
-                <p class="hotel-descricao">Transforme seus sonhos na ilha em realidade no The Standard, Maldives. A uma
-                    curta viagem de
-                    hidroavião do Aeroporto Internacional Velana de Male, nosso oásis é uma mistura única de
-                    relaxamento, socialização e aventura, perfeito para uma escapadela romântica, com amigos ou férias
-                    em família. Cada uma das nossas 115 villas, sobre a água ou à beira-mar, tem seu próprio lounge
-                    privativo e piscina de imersão. Passe seus dias explorando a beleza natural da ilha, com atividades
-                    como mergulho com snorkel em nosso recife protegido, passeios de barco, mergulho profundo e muito
-                    mais. Relaxe e refresque-se com luxuosos tratamentos de spa no The Standard Spa, completo com hammam
-                    comum, sauna a vapor aromática, ioga diária e nove salas de tratamento privativas. De manhã à noite,
-                    alimente-se e reabasteça-se em uma variedade de opções gastronômicas, desde nosso restaurante Kula,
-                    o dia todo, até nosso autêntico restaurante sobre a água das Maldivas, Guduguda.
+
+                <h2 class="info__titulo">Overview</h2>
+
+                <p class="info__descricao">
+                    Listado como um <strong>dos melhores hotéis nas Maldivas pela Condé Nast Traveller</strong>, faça
+                    uma viagem ao paraíso e transforme os sonhos da sua ilha em realidade no The Standard, Maldivas.
                 </p>
 
-                <strong class="hotel-descricao">
-                    ✨A temporada festiva está começando e estamos cheios de surpresas! Temos árvores de natal,
-                    véspera de ano novo Champanhe e apresentações da Área 51. Clique aqui para ver a programação
-                    completa e reservar sua estadia em paraíso imediatamente!✨
-                </strong>
+                <p class="info__descricao">A apenas uma curta viagem de hidroavião do Aeroporto Internacional Velana de
+                    Malé, espere uma experiência personalizada perfeita para amantes, amigos e famílias. Cada uma de
+                    nossas 115 vilas, seja sobre a água ou à beira-mar, possui lounge privativo e piscina de imersão.
+                    Passe seus dias explorando a beleza natural da ilha com atividades como mergulho com snorkel em
+                    nosso recife protegido, passeios de barco, mergulho profundo e muito mais. Relaxe e refresque-se no
+                    The Standard Spa, completo com hammam comum, sauna a vapor aromática e ioga diária. Volte e faça o
+                    que quiser em nossas festas semanais na piscina e eventos de música ao vivo. Desfrute de um
+                    almoço flutuante, de um jantar privado sob as estrelas ou desfrute das nossas opções
+                    gastronómicas com tudo incluído. Desde refeições durante todo o dia no Kula até a autêntica
+                    culinária das Maldivas no Guduguda, pores do sol intimistas enquanto saboreia petiscos e coquetéis
+                    izakaya no Beru Bar e refeições à beira-mar no BBQ Shak, experimente o sabor do paraíso.
+                </p>
 
-                <p class="hotel-descricao">Clique para fazer o download do nosso <strong>Hotel Factsheet</strong> e
-                    certifique-se de nos seguir
-                    no Instagram para mais conteúdo de desejo de viajar: <strong>@thestandardmaldives</strong>
+                <p class="info__descricao">
+                    Baixe nosso <strong>folheto informativo</strong> sobre hotéis e <strong>siga-nos no
+                        Instagram</strong> para obter mais conteúdo sobre desejo de viajar
                 </p>
             </div>
 
-            <div class="hotel-imagem">
-                <img src="assets/img/hotel.jpg" alt="Hotel" width="1920" height="1279">
+            <div class="hotel__container-imagem">
+                <img src="assets/images/hotel.jpg" alt="Hotel" width="1920" height="1279">
             </div>
         </div>
+
         <div class="hotel-avaliacoes">
             <div class="avaliacao-item">
                 <h3 class="caixa-alta avalicao-titulo">“Top 10 destinos para 2022.”</h3>

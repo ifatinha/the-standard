@@ -14,7 +14,7 @@
     position      : fixed;
     transition    : .3s ease-in-out;
     width         : 100%;
-    z-index       : 9999;
+    z-index       : 999999;
 
     &__menu {
         @include mixins.display-flex(center, space-between);
@@ -63,5 +63,6 @@
     &__dropdown-link {
         @include typography.typography-title(28);
         @extend %modal-links;
+        color: map-get($map: colors.$color-palette, $key: pure-white);
     }
 }

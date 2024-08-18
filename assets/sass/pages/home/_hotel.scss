@@ -1,0 +1,75 @@
+@use "../../global/mixins";
+@use "../../global/colors";
+@use "../../global/typography";
+@use "../../util/queries";
+
+.hotel {
+
+    &__container {
+        @include mixins.display-grid(1fr 2fr);
+        height: 100%;
+
+        @include queries.devices-t-and-m() {
+            grid-template-columns: 1fr;
+        }
+
+        &-info {
+            color  : map-get($map: colors.$color-palette, $key: alert-red);
+            padding: 1rem;
+        }
+
+        &-imagem {
+            img {
+                height    : 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.info__contato {
+
+    &-horario {
+        @include typography.typography-text(14);
+        font-weight   : 500;
+        text-transform: capitalize;
+    }
+
+    &-time {
+        @include typography.typography-text(24);
+        font-weight  : 600;
+        line-height  : 20px;
+        margin-bottom: 8px;
+    }
+
+    &-link {
+        @include typography.typography-text(14);
+        display    : block;
+        font-weight: 500;
+        line-height: 20px;
+        transition : .3s ease-in-out;
+
+        &:hover {
+            color: map-get($map: colors.$color-palette, $key: midnight-dark);
+        }
+    }
+
+    &-list {
+        @include mixins.display-flex(center, start);
+        gap   : 1rem;
+        margin: 8px 0;
+    }
+}
+
+.info__titulo {
+    @include typography.typography-text(92);
+    font-weight   : 600;
+    letter-spacing: -0.45px;
+    margin        : 10px 0 7px;
+}
+
+.info__descricao {
+    @include typography.typography-text(14);
+    font-weight  : 500;
+    margin-bottom: 1rem;
+}
