@@ -34,6 +34,43 @@ Abaixo está uma descrição da estrutura de pastas do projeto:
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/starbucks-clone.git
+    git clone https://github.com/ifatinha/the-standard.git
     ```
 
+2. Navegue para o diretório do projeto:
+
+    ```bash
+    cd projeto-hotel
+    ```
+3. Se necessário, instale as dependências
+    
+    ```
+    npm install
+    npm run build-css
+    ```
+    Certifique-se de ter o Node.js e o npm instalados. O comando `npm run build-css` deve compilar o SCSS para CSS.
+
+4. Abra o arquivo `index.html` em seu navegador preferido:
+
+    ```bash
+    open index.html
+    ```
+
+## Estrutura de Páginas
+
+- **index.html**: A página principal do projeto.
+- **pages/**: Contém páginas HTML adicionais que podem ser acessadas a partir do `index.html`.
+
+## Personalização
+
+- **CSS**: Adicione ou modifique os estilos no diretório `assets/css`.
+- **JavaScript**: Adicione funcionalidades no diretório `assets/js`.
+- **Imagens e Ícones**: Coloque suas imagens no diretório `assets/images` ou `assets/icons`.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Abra um pull request com suas alterações ou melhorias.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
