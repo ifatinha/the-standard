@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .container {
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+
+        .container img {
+            height: 100%;
+            inset: 0;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+            transition: 1s ease-in-out;
+        }
+
+        .bullets {
+            bottom: 1rem;
+            display: flex;
+            left: 45%;
+            position: absolute;
+            text-align: center;
+        }
+
+        .bullet-single {
+            background-color: #ccc;
+            border-radius: 50%;
+            bottom: 0;
+            cursor: pointer;
+            height: 20px;
+            margin: 0 .2rem;
+            transition: .3s ease-in-out;
+            width: 20px;
+        }
+
+        .active-bullet {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img data-image="0" src="images/slide-01.jpg" alt="Imagem">
+        <img data-image="1" src="images/slide-02.jpg" alt="Imagem">
+        <img data-image="2" src="images/slide-03.jpg" alt="Imagem">
+        <img data-image="3" src="images/slide-04.jpg" alt="Imagem">
+        <img data-image="4" src="images/slide-05.jpg" alt="Imagem">
+    </div>
+
+    <div class="bullets">
+        <div data-bullet="0" class="bullet-single active-bullet"></div>
+        <div data-bullet="1" class="bullet-single"></div>
+        <div data-bullet="2" class="bullet-single"></div>
+        <div data-bullet="3" class="bullet-single"></div>
+        <div data-bullet="4" class="bullet-single"></div>
+    </div>
+
+    <script src="slide.js"></script>
+</body>
+
+</html>
