@@ -1,0 +1,65 @@
+@use "../../sass/global/mixins";
+@use "../../sass/global/colors";
+@use "../../sass/global/typography";
+@use "../../sass/util/queries";
+@use "../../sass/components/buttons"as *;
+
+.article {
+    @include mixins.display-grid(2fr 1fr);
+    color : map-get($map: colors.$color-palette, $key: alert-red);
+    margin: 3rem 0;
+    width : 100%;
+
+    @include queries.devices-t-and-m() {
+        grid-template-columns: 1fr;
+    }
+
+    &__image {
+        img {
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__descricao {
+        @include mixins.display-flex(start, center);
+        flex-direction: column;
+        gap           : 1rem;
+        padding       : 0 1rem;
+
+        @include queries.devices-t-and-m() {
+            margin: 1rem 0;
+        }
+    }
+
+    &__title {
+        @include typography.typography-title(36);
+
+        display       : inline-block;
+        font-weight   : 600;
+        letter-spacing: -0.45px;
+        text-transform: capitalize;
+
+        @include queries.devices-t-and-m() {
+            @include typography.typography-title(28);
+        }
+    }
+
+    &__paragraph {
+        @include typography.typography-text(16);
+        letter-spacing: -0.45px;
+        margin        : 1rem 0;
+    }
+
+    &__link {
+        @extend %button-default;
+        @extend %button-red;
+        margin-bottom: 1rem;
+    }
+}
+
+.odd {
+    @include queries.devices-t-and-m() {
+        order: 2;
+    }
+}

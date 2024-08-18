@@ -66,6 +66,10 @@
     font-weight   : 600;
     letter-spacing: -0.45px;
     margin        : 10px 0 7px;
+
+    @include queries.devices-t-and-m() {
+        @include typography.typography-text(64);
+    }
 }
 
 .info__descricao {

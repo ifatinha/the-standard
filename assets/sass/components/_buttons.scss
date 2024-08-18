@@ -21,10 +21,37 @@
     text-align      : center;
     text-transform  : uppercase;
     width           : 75px;
+    z-index         : 99999;
 
     @include queries.devices-t-and-m() {
         @include typography.typography-text(12);
-        height : 50px;
-        width  : 50px;
+        height: 50px;
+        width : 50px;
+    }
+}
+
+%button-default {
+    @include typography.typography-text(16);
+    display       : inline-block;
+    font-weight   : 600;
+    letter-spacing: -0.45px;
+    line-height   : 1.25;
+    padding       : 6px 12px;
+    text-align    : center;
+    transition    : .3s ease-in-out;
+    text-transform: capitalize;
+}
+
+%button-red {
+    background-color: map-get($map: colors.$color-palette, $key: pure-white);
+    border          : 1px solid map-get($map: colors.$color-palette, $key: alert-red);
+    box-shadow      : map-get($map: colors.$color-palette, $key: alert-red) 3.75px 3.75px 0px 0px;
+    color           : map-get($map: colors.$color-palette, $key: alert-red);
+
+    &:hover {
+        background-color: map-get($map: colors.$color-palette, $key: alert-red);
+        box-shadow      : map-get($map: colors.$color-palette, $key: pure-white) 3.75px 3.75px 0px 0px;
+        border-color    : map-get($map: colors.$color-palette, $key: pure-white);
+        color           : map-get($map: colors.$color-palette, $key: pure-white);
     }
 }
