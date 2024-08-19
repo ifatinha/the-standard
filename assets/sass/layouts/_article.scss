@@ -7,7 +7,6 @@
 .article {
     @include mixins.display-grid(2fr 1fr);
     color : map-get($map: colors.$color-palette, $key: alert-red);
-    margin: 3rem 0;
     width : 100%;
 
     @include queries.devices-t-and-m() {

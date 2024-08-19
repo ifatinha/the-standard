@@ -1,48 +1,55 @@
-export function carousel() {
+function createCarousel(carouselItems, bullets, interval = 3000) {
+    let currentIndex = 0;
+    let autoSlide;
 
-    const carouselItem = document.querySelectorAll("[data-carousel]");
-    const bullets = document.querySelectorAll("[data-bullet]");
-    let lastIndex = 0;
-    const interval = 3000;
-
-    // Inicializa o primeiro slide visivel
-    carouselItem[0].style.opacity = 1;
-
-    function updateSlide(index) {
-        const lastItem = carouselItem[lastIndex];
-        const actualItem = carouselItem[index];
-
-        lastItem.style.opacity = 0;
-        actualItem.style.opacity = 1;
-
-        lastIndex = index;
-    }
-
-    function updateBullets(index) {
-        bullets.forEach((item, i) => {
-            item.classList.toggle("active-bullet", i == index);
+    const showSlide = (index) => {
+        carouselItems.forEach((item, i) => {
+            item.style.opacity = i === index ? 1 : 0;
         })
+
+        bullets.forEach((bullet, i) => {
+            bullet.classList.toggle("active-bullet", i == index);
+        })
+
+        currentIndex = index;
     }
 
-    function nextSlide() {
-        const nextIndex = (lastIndex + 1) % carouselItem.length
-        updateSlide(nextIndex);
-        updateBullets(nextIndex);
+    const nextSlide = () => {
+        const nextIndex = (currentIndex + 1) % carouselItems.length;
+        showSlide(nextIndex);
+    }
+
+    const startAutoSlide = () => {
+        autoSlide = setInterval(nextSlide, interval);
+    }
+
+    const stopAutoSlide = () => {
+        clearInterval(autoSlide);
     }
 
     // Configura os eventos de clique de cada bullet
     bullets.forEach((bullet, index) => {
         bullet.addEventListener("click", () => {
-            updateSlide(index);
-            updateBullets(index);
-
-            //Reinicia o intervalo quando o usuário clica
-            clearInterval(autoSlide);
-            autoSlide = setInterval(nextSlide, interval);
+            showSlide(index);
+            stopAutoSlide();
+            startAutoSlide();
         })
     })
 
-    let autoSlide = setInterval(nextSlide, interval);
+    showSlide(currentIndex);
+    startAutoSlide();
 }
 
-carousel();
+export function carouselReviews() {
+    const carouselItem = document.querySelectorAll("[data-review]");
+    const bullets = document.querySelectorAll("[data-bullet-review]");
+    createCarousel(carouselItem, bullets);
+
+}
+
+export function carouselImages() {
+    const imagens = document.querySelectorAll("[data-image]");
+    const bullets = document.querySelectorAll("[data-bullet-img]");
+
+    createCarousel(imagens, bullets);
+}
