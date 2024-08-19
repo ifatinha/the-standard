@@ -1,19 +1,19 @@
-function carousel() {
+export function carousel() {
 
-    const images = document.querySelectorAll("[data-image]");
+    const carouselItem = document.querySelectorAll("[data-carousel]");
     const bullets = document.querySelectorAll("[data-bullet]");
     let lastIndex = 0;
     const interval = 3000;
 
     // Inicializa o primeiro slide visivel
-    images[0].style.opacity = 1;
+    carouselItem[0].style.opacity = 1;
 
     function updateSlide(index) {
-        const lastImage = images[lastIndex];
-        const actualImage = images[index];
+        const lastItem = carouselItem[lastIndex];
+        const actualItem = carouselItem[index];
 
-        lastImage.style.opacity = 0;
-        actualImage.style.opacity = 1;
+        lastItem.style.opacity = 0;
+        actualItem.style.opacity = 1;
 
         lastIndex = index;
     }
@@ -25,7 +25,7 @@ function carousel() {
     }
 
     function nextSlide() {
-        const nextIndex = (lastIndex + 1) % images.length
+        const nextIndex = (lastIndex + 1) % carouselItem.length
         updateSlide(nextIndex);
         updateBullets(nextIndex);
     }

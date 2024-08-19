@@ -1,0 +1,37 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+.carousel {
+    height  : 100%;
+    overflow: hidden;
+
+    &__item {
+        background-color: map-get($map: colors.$color-palette, $key: pure-white);
+        height          : 100%;
+        opacity         : 0;
+        position        : absolute;
+        transition      : 1s ease-in-out;
+        width           : 100%;
+    }
+
+    &__bullets {
+        @include mixins.display-flex(center, start);
+        bottom      : 30px;
+        gap         : 5px;
+        padding-left: 1rem;
+        position    : absolute;
+
+        &-single {
+            border       : 1px solid map-get($map: colors.$color-palette, $key: alert-red);
+            border-radius: 50%;
+            cursor       : pointer;
+            height       : 10px;
+            transition   : .3s ease-in-out;
+            width        : 10px;
+        }
+    }
+}
+
+.active-bullet {
+    background-color: map-get($map: colors.$color-palette, $key: alert-red);
+}

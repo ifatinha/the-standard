@@ -20,6 +20,10 @@
 
         position: relative;
 
+        @include queries.devices-t-and-m() {
+            min-height: 250px;
+        }
+
         &:nth-child(2n) {
             background: map-get($map: colors.$color-palette, $key: pure-white);
             color     : map-get($map: colors.$color-palette, $key: alert-red);
@@ -83,6 +87,10 @@
         font-weight   : 500;
         letter-spacing: -0.45px;
         margin-bottom : 8px;
+
+        @include queries.devices(m) {
+            @include typography.typography-title(24);
+        }
     }
 
     &__link {

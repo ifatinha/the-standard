@@ -459,6 +459,40 @@ a {
   color: #ee2324;
 }
 
+.carousel {
+  height: 100%;
+  overflow: hidden;
+}
+.carousel__item {
+  background-color: #ffffff;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: 1s ease-in-out;
+  width: 100%;
+}
+.carousel__bullets {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  bottom: 30px;
+  gap: 5px;
+  padding-left: 1rem;
+  position: absolute;
+}
+.carousel__bullets-single {
+  border: 1px solid #ee2324;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  transition: 0.3s ease-in-out;
+  width: 10px;
+}
+
+.active-bullet {
+  background-color: #ee2324;
+}
+
 .header {
   align-items: center;
   display: flex;
@@ -755,6 +789,16 @@ a {
 .reviews__item {
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .reviews__item {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reviews__item {
+    min-height: 250px;
+  }
+}
 .reviews__item:nth-child(2n) {
   background: #ffffff;
   color: #ee2324;
@@ -811,6 +855,12 @@ a {
   font-weight: 500;
   letter-spacing: -0.45px;
   margin-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .reviews__title {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.5rem;
+  }
 }
 .reviews__link {
   bottom: 20px;
