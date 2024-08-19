@@ -672,12 +672,12 @@ article {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .odd {
+  .order {
     order: 2;
   }
 }
 @media screen and (max-width: 767px) {
-  .odd {
+  .order {
     order: 2;
   }
 }

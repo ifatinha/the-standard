@@ -6,8 +6,8 @@
 
 .article {
     @include mixins.display-grid(2fr 1fr);
-    color : map-get($map: colors.$color-palette, $key: alert-red);
-    width : 100%;
+    color: map-get($map: colors.$color-palette, $key: alert-red);
+    width: 100%;
 
     @include queries.devices-t-and-m() {
         grid-template-columns: 1fr;
@@ -57,7 +57,7 @@
     }
 }
 
-.odd {
+.order {
     @include queries.devices-t-and-m() {
         order: 2;
     }
