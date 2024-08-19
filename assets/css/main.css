@@ -757,6 +757,11 @@ a {
 }
 .reviews__item:nth-child(2n) {
   background: #ffffff;
+  color: #ee2324;
+}
+.reviews__item:nth-child(2n) h2 {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .reviews__item:nth-child(2n+1) h2 {
   color: #ffffff;
@@ -774,6 +779,31 @@ a {
   padding: 1rem;
   position: absolute;
   width: 100%;
+}
+.reviews__item-comment {
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+.reviews__item-comment p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.125rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  gap: 8px;
+  position: relative;
+}
+.reviews__item-comment p::before {
+  background: #ee2324;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 16px;
 }
 .reviews__title {
   font-family: "Libre Franklin", sans-serif;

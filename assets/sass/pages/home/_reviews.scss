@@ -22,6 +22,12 @@
 
         &:nth-child(2n) {
             background: map-get($map: colors.$color-palette, $key: pure-white);
+            color     : map-get($map: colors.$color-palette, $key: alert-red);
+
+            h2 {
+                font-weight   : 600;
+                text-transform: uppercase;
+            }
         }
 
         &:nth-child(2n+1) {
@@ -46,6 +52,29 @@
             padding         : 1rem;
             position        : absolute;
             width           : 100%;
+        }
+
+        &-comment {
+            @include mixins.display-flex(start, center);
+            flex-direction: column;
+            height        : 100%;
+            padding       : 1rem;
+
+            p {
+                @include typography.typography-text(18);
+                @include mixins.display-flex(center, center);
+                font-weight: 500;
+                gap        : 8px;
+                position   : relative;
+
+                &::before {
+                    background: map-get($map: colors.$color-palette, $key: alert-red);
+                    content   : "";
+                    display   : block;
+                    height    : 2px;
+                    width     : 16px;
+                }
+            }
         }
     }
 
