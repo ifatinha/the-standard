@@ -91,6 +91,20 @@
     }
 }
 
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @mixin heartbeat() {
     @include prefixes.prefix(animation, heartbeat 2s ease-in-out infinite reverse both);
+}
+
+@mixin fadeEffect() {
+    @include prefixes.prefix(animation, fadeEffect .3s);
 }

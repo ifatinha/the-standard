@@ -217,6 +217,14 @@ article {
     animation-timing-function: ease-out;
   }
 }
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .circle-button {
   font-family: "Source Sans 3", sans-serif;
   font-size: 0.875rem;
@@ -701,6 +709,7 @@ article {
 .sidemenu-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .sidemenu-section {
@@ -773,24 +782,27 @@ article {
   color: #ee2324;
 }
 .sidemenu-section__image {
-  height: 100%;
+  min-height: 350px;
   position: relative;
   background-color: darkblue;
-}
-.sidemenu-section__image-container {
-  height: 100%;
-  inset: 0;
-  position: absolute;
 }
 
 .sidemenu__image {
   display: none;
+  inset: 0;
   position: absolute;
+  -webkit-animation: fadeEffect 0.3s;
+  -moz-animation: fadeEffect 0.3s;
+  -ms-animation: fadeEffect 0.3s;
+  -o-animation: fadeEffect 0.3s;
+  animation: fadeEffect 0.3s;
 }
 .sidemenu__image img {
   display: block;
   height: 100%;
+  object-fit: cover;
   position: relative;
+  width: 100%;
 }
 
 .sidemenu__image-desc {
@@ -800,16 +812,12 @@ article {
   width: 100%;
   z-index: 9999;
 }
-.sidemenu__image-desc h2 {
+.sidemenu__image-desc p {
   font-family: "Source Sans 3", sans-serif;
-  font-size: 4rem;
-  color: #ffffff;
-  font-weight: 600;
-}
-@media screen and (max-width: 767px) {
-  .sidemenu__image-desc h2 {
-    font-size: 2rem;
-  }
+  font-size: 1.125rem;
+  color: #ee2324;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .tabcontent_active {
   display: block;
