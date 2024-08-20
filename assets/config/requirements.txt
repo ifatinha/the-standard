@@ -5,7 +5,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 npm -g install sass
 
 # Monitora o arquivo Sass `_main.scss` na pasta `assets/scss` e compila para o CSS comprimido em `assets/main/main.css`.
-sass --watch assets/scss/_main.scss:assets/main/main.css --style compressed
+sass --watch assets/sass/_main.scss:assets/css/main.css --style compressed
 
 # Instala globalmente o Clean-CSS, uma ferramenta para minificação de CSS.
 npm i clean-css-cli -g

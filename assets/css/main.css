@@ -260,7 +260,7 @@ article {
   }
 }
 
-.reviews__link, .article__link {
+.reviews__link, .sidemenu__image-desc a, .article__link {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1rem;
   display: inline-block;
@@ -273,13 +273,13 @@ article {
   text-transform: capitalize;
 }
 
-.reviews__link, .article__link {
+.reviews__link, .sidemenu__image-desc a, .article__link {
   background-color: #ffffff;
   border: 1px solid #ee2324;
   box-shadow: #ee2324 3.75px 3.75px 0px 0px;
   color: #ee2324;
 }
-.reviews__link:hover, .article__link:hover {
+.reviews__link:hover, .sidemenu__image-desc a:hover, .article__link:hover {
   background-color: #ee2324;
   box-shadow: #ffffff 3.75px 3.75px 0px 0px;
   border-color: #ffffff;
@@ -604,18 +604,34 @@ article {
 }
 
 .article {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   color: #ee2324;
   width: 100%;
 }
+.article:nth-child(2n) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .article {
+  .article:nth-child(2n) {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 767px) {
-  .article {
+  .article:nth-child(2n) {
+    grid-template-columns: 1fr;
+  }
+}
+.article:nth-child(2n+1) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article:nth-child(2n+1) {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article:nth-child(2n+1) {
     grid-template-columns: 1fr;
   }
 }
@@ -680,6 +696,128 @@ article {
   .order {
     order: 2;
   }
+}
+
+.sidemenu-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidemenu-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidemenu-section {
+    grid-template-columns: 1fr;
+  }
+}
+.sidemenu-section__menu {
+  background-color: #ee2324;
+  color: #ffffff;
+}
+.sidemenu-section__title {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 5.75rem;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+  margin-bottom: 8px;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidemenu-section__title {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidemenu-section__title {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 4rem;
+  }
+}
+.sidemenu-section__desc {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.45px;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+.sidemenu-section__list {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sidemenu-section__list li {
+  border: 1px solid transparent;
+  border-top-color: #ffffff;
+  width: 100%;
+}
+.sidemenu-section__list li a {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 6px 1rem;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+.sidemenu-section__list li a:hover {
+  background-color: #ffffff;
+  color: #ee2324;
+}
+.sidemenu-section__list li a i {
+  color: #ee2324;
+}
+.sidemenu-section__image {
+  height: 100%;
+  position: relative;
+  background-color: darkblue;
+}
+.sidemenu-section__image-container {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+}
+
+.sidemenu__image {
+  display: none;
+  position: absolute;
+}
+.sidemenu__image img {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.sidemenu__image-desc {
+  bottom: 0;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.sidemenu__image-desc h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .sidemenu__image-desc h2 {
+    font-size: 2rem;
+  }
+}
+.tabcontent_active {
+  display: block;
+}
+
+.sidemenu-active {
+  background-color: #ffffff;
+  color: #ee2324;
 }
 
 .main {

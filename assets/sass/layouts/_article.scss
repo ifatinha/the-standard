@@ -5,12 +5,24 @@
 @use "../../sass/components/buttons"as *;
 
 .article {
-    @include mixins.display-grid(2fr 1fr);
+
     color: map-get($map: colors.$color-palette, $key: alert-red);
     width: 100%;
 
-    @include queries.devices-t-and-m() {
-        grid-template-columns: 1fr;
+    &:nth-child(2n) {
+        @include mixins.display-grid(2fr 1fr);
+
+        @include queries.devices-t-and-m() {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &:nth-child(2n+1) {
+        @include mixins.display-grid(1fr 2fr);
+
+        @include queries.devices-t-and-m() {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__image {

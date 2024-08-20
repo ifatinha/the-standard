@@ -1,0 +1,121 @@
+@use "../global/mixins";
+@use "../global/colors";
+@use "../global/typography";
+@use "../components/buttons"as *;
+@use "../util/queries";
+
+.sidemenu-section {
+    @include mixins.display-grid(1fr 2fr);
+
+    @include queries.devices-t-and-m() {
+        grid-template-columns: 1fr;
+    }
+
+    &__menu {
+        background-color: map-get($map: colors.$color-palette, $key: alert-red);
+        color           : map-get($map: colors.$color-palette, $key: pure-white);
+    }
+
+    &__title {
+        @include typography.typography-title(92);
+        font-weight   : 600;
+        letter-spacing: -0.45px;
+        margin-bottom : 8px;
+        padding       : 0 1rem;
+
+        @include queries.devices-t-and-m() {
+            @include typography.typography-title(64);
+        }
+    }
+
+    &__desc {
+        @include typography.typography-text(16);
+        letter-spacing: -0.45px;
+        margin-bottom : 2rem;
+        padding       : 0 1rem;
+    }
+
+    &__list {
+        @include mixins.display-flex(start, space-between);
+        flex-direction: column;
+
+        li {
+            border          : 1px solid transparent;
+            border-top-color: map-get($map: colors.$color-palette, $key: pure-white);
+            width           : 100%;
+
+            a {
+                @include mixins.display-flex(center, space-between);
+                @include typography.typography-text(24);
+                font-weight: 600;
+                padding    : 6px 1rem;
+                transition : .3s ease-in-out;
+                width      : 100%;
+
+                &:hover {
+                    background-color: map-get($map: colors.$color-palette, $key: pure-white);
+                    color           : map-get($map: colors.$color-palette, $key: alert-red);
+                }
+
+                i {
+                    color: map-get($map: colors.$color-palette, $key: alert-red);
+                }
+            }
+        }
+    }
+
+    &__image {
+        height          : 100%;
+        position        : relative;
+        background-color: darkblue;
+
+        &-container {
+            height  : 100%;
+            inset   : 0;
+            position: absolute;
+        }
+    }
+}
+
+.sidemenu__image {
+    display : none;
+    position: absolute;
+
+    img {
+        display : block;
+        height  : 100%;
+        position: relative;
+    }
+}
+
+.sidemenu__image-desc {
+    bottom  : 0;
+    padding : 1rem;
+    position: absolute;
+    width   : 100%;
+    z-index : 9999;
+
+    h2 {
+        @include typography.typography-text(64);
+        color      : map-get($map: colors.$color-palette, $key: pure-white);
+        font-weight: 600;
+
+        @include queries.devices(m) {
+            font-size: 2rem;
+        }
+    }
+
+    a {
+        @extend %button-default;
+        @extend %button-red;
+    }
+}
+
+.tabcontent_active {
+    display: block;
+}
+
+.sidemenu-active {
+    background-color: map-get($map: colors.$color-palette, $key: pure-white);
+    color           : map-get($map: colors.$color-palette, $key: alert-red);
+}
