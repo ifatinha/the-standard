@@ -1042,4 +1042,15 @@ article {
   position: absolute;
 }
 
+.food {
+  width: 100%;
+}
+.food h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 5.75rem;
+  color: #ee2324;
+  font-weight: 500;
+  letter-spacing: -0.45px;
+}
+
 /*# sourceMappingURL=main.css.map */

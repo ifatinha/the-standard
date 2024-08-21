@@ -1,0 +1,15 @@
+@use "../../global/colors";
+@use "../../global/typography";
+@use "../../components/buttons"as *;
+@use "../../util/queries";
+
+.food {
+    width: 100%;
+
+    h2 {
+        @include typography.typography-title(92);
+        color         : map-get($map: colors.$color-palette, $key: alert-red);
+        font-weight   : 500;
+        letter-spacing: -0.45px;
+    }
+}
