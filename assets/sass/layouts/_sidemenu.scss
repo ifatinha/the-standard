@@ -87,7 +87,12 @@
         @include typography.typography-text(18);
         color        : map-get($map: colors.$color-palette, $key: pure-white);
         font-weight  : 500;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        max-width    : 420px;
+
+        @include queries.devices-t-and-m() {
+            width: 100%;
+        }
     }
 
     a {
@@ -105,8 +110,11 @@
     color           : map-get($map: colors.$color-palette, $key: alert-red);
 }
 
-.spa-button-active {
-    // background-color: map-get($map: colors.$color-palette, $key: sun-yellow);
-    // color           : map-get($map: colors.$color-palette, $key: pure-white);
-    background-color: pink;
+.yellow-button-active {
+    background-color: map-get($map: colors.$color-palette, $key: sun-yellow) !important;
+    color           : map-get($map: colors.$color-palette, $key: pure-white) !important;
+
+    i {
+        color: map-get($map: colors.$color-palette, $key: pure-white) !important;
+    }
 }

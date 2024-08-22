@@ -46,11 +46,16 @@
       }
 
       a {
-         
+         background-color: map-get($map: colors.$color-palette, $key: pure-white);
+         color           : map-get($map: colors.$color-palette, $key: sun-yellow);
 
          &:hover {
             background-color: map-get($map: colors.$color-palette, $key: sun-yellow);
             color           : map-get($map: colors.$color-palette, $key: pure-white);
+         }
+
+         i {
+            color: map-get($map: colors.$color-palette, $key: pure-white);
          }
       }
    }

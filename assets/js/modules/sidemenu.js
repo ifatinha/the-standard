@@ -41,5 +41,5 @@ export function activeSpaTab() {
     const links = document.querySelectorAll("#spa-list a");
     const tabcontents = document.querySelectorAll("[data-spa]");
 
-    activeSidemenu(links, tabcontents, "spa-button-active");
+    activeSidemenu(links, tabcontents, "yellow-button-active");
 }

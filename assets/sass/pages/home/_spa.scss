@@ -1,0 +1,14 @@
+@use "../../components/buttons"as *;
+@use "../../global/typography";
+
+#spa {
+    .sidemenu__image-desc {
+        a {
+            @extend %button-yellow;
+        }
+
+        p {
+            @include typography.typography-text(14);
+        }
+    }
+}

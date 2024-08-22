@@ -135,8 +135,15 @@ article {
 .yellow-bg .sidemenu-section__list li {
   border-top-color: #ffc527;
 }
+.yellow-bg .sidemenu-section__list a {
+  background-color: #ffffff;
+  color: #ffc527;
+}
 .yellow-bg .sidemenu-section__list a:hover {
   background-color: #ffc527;
+  color: #ffffff;
+}
+.yellow-bg .sidemenu-section__list a i {
   color: #ffffff;
 }
 
@@ -317,6 +324,19 @@ article {
   box-shadow: #ffffff 3.75px 3.75px 0px 0px;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+#spa .sidemenu__image-desc a {
+  background-color: #ffc527;
+  border: 1px solid #ffffff;
+  box-shadow: #ffffff 3.75px 3.75px 0px 0px;
+  color: #ffffff;
+}
+#spa .sidemenu__image-desc a:hover {
+  background-color: #ffffff;
+  box-shadow: #ffc527 3.75px 3.75px 0px 0px;
+  border-color: #ffc527;
+  color: #ffc527;
 }
 
 .menu-bugger {
@@ -858,7 +878,18 @@ article {
   font-size: 1.125rem;
   color: #ffffff;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  max-width: 420px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidemenu__image-desc p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidemenu__image-desc p {
+    width: 100%;
+  }
 }
 .tabcontent_active {
   display: block;
@@ -869,8 +900,12 @@ article {
   color: #ee2324;
 }
 
-.spa-button-active {
-  background-color: pink;
+.yellow-button-active {
+  background-color: #ffc527 !important;
+  color: #ffffff !important;
+}
+.yellow-button-active i {
+  color: #ffffff !important;
 }
 
 .main {
@@ -1108,6 +1143,11 @@ article {
   .food h2 {
     font-size: 3rem;
   }
+}
+
+#spa .sidemenu__image-desc p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=main.css.map */

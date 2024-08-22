@@ -55,3 +55,17 @@
         color           : map-get($map: colors.$color-palette, $key: pure-white);
     }
 }
+
+%button-yellow {
+    background-color: map-get($map: colors.$color-palette, $key: sun-yellow);
+    border          : 1px solid map-get($map: colors.$color-palette, $key: pure-white);
+    box-shadow      : map-get($map: colors.$color-palette, $key: pure-white) 3.75px 3.75px 0px 0px;
+    color           : map-get($map: colors.$color-palette, $key: pure-white);
+
+    &:hover {
+        background-color: map-get($map: colors.$color-palette, $key: pure-white);
+        box-shadow      : map-get($map: colors.$color-palette, $key: sun-yellow) 3.75px 3.75px 0px 0px;
+        border-color    : map-get($map: colors.$color-palette, $key: sun-yellow);
+        color           : map-get($map: colors.$color-palette, $key: sun-yellow);
+    }
+}
