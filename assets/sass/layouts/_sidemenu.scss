@@ -67,8 +67,8 @@
     }
 
     &__image {
-        min-height      : 350px;
-        position        : relative;
+        min-height: 350px;
+        position  : relative;
     }
 }
 
@@ -85,17 +85,6 @@
         position  : relative;
         width     : 100%;
     }
-
-    // &::before {
-    //     background-image: linear-gradient(to top, #fff, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 50%);
-    //     position        : absolute;
-    //     content         : "";
-    //     top             : 0;
-    //     left            : 0;
-    //     width           : 100%;
-    //     height          : 100%;
-    //     z-index         : 0;
-    // }
 }
 
 .sidemenu__image-desc {
@@ -107,7 +96,7 @@
 
     p {
         @include typography.typography-text(18);
-        color        : map-get($map: colors.$color-palette, $key: alert-red);
+        color        : map-get($map: colors.$color-palette, $key: pure-white);
         font-weight  : 500;
         margin-bottom: 10px;
     }

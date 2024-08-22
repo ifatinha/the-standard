@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -116,7 +116,7 @@ article {
 }
 
 .header__dropdown-toggle, .header__navbar-item, .aside__list-item {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 0.875rem;
   color: #ffffff;
   font-weight: 600;
@@ -226,7 +226,7 @@ article {
   }
 }
 .circle-button {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   align-items: center;
   display: flex;
@@ -253,7 +253,7 @@ article {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .circle-button {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
     height: 50px;
     width: 50px;
@@ -261,7 +261,7 @@ article {
 }
 @media screen and (max-width: 767px) {
   .circle-button {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
     height: 50px;
     width: 50px;
@@ -269,7 +269,7 @@ article {
 }
 
 .reviews__link, .sidemenu__image-desc a, .article__link {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   display: inline-block;
   font-weight: 600;
@@ -358,7 +358,7 @@ article {
 }
 
 .visually-hidden {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 1.125rem;
   color: #ffffff;
   font-size: 1.125rem;
@@ -394,7 +394,7 @@ article {
   width: 100%;
 }
 .modal__link {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 2.125rem;
   color: #ee2324;
 }
@@ -422,7 +422,7 @@ article {
   display: block;
 }
 .modal__dropdown-link {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 1.75rem;
   color: #ffffff;
 }
@@ -574,7 +574,7 @@ article {
   z-index: 2;
 }
 .header__dropdown-list-item {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 0.875rem;
   color: #343a40;
   display: inline-block;
@@ -615,37 +615,24 @@ article {
   color: #ee2324;
   width: 100%;
 }
-.article:nth-child(2n) {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.article__image {
+  height: 350px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .article:nth-child(2n) {
-    grid-template-columns: 1fr;
+  .article__image {
+    height: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .article:nth-child(2n) {
-    grid-template-columns: 1fr;
-  }
-}
-.article:nth-child(2n+1) {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .article:nth-child(2n+1) {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 767px) {
-  .article:nth-child(2n+1) {
-    grid-template-columns: 1fr;
+  .article__image {
+    height: auto;
   }
 }
 .article__image img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 .article__descricao {
   align-items: start;
@@ -666,33 +653,42 @@ article {
   }
 }
 .article__title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 2.25rem;
   display: inline-block;
   font-weight: 600;
   letter-spacing: -0.45px;
-  text-transform: capitalize;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .article__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 1.75rem;
   }
 }
 @media screen and (max-width: 767px) {
   .article__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 1.75rem;
   }
 }
 .article__paragraph {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: -0.45px;
   margin: 1rem 0;
 }
 .article__link {
   margin-bottom: 1rem;
+}
+.article__list {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.5625px;
+  width: 100%;
+}
+.article__list li {
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -703,6 +699,36 @@ article {
 @media screen and (max-width: 767px) {
   .order {
     order: 2;
+  }
+}
+
+.article-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-left {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article-left {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-right {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article-right {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -726,7 +752,7 @@ article {
   color: #ffffff;
 }
 .sidemenu-section__title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 5.75rem;
   font-weight: 600;
   letter-spacing: -0.45px;
@@ -735,18 +761,18 @@ article {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .sidemenu-section__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 767px) {
   .sidemenu-section__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 4rem;
   }
 }
 .sidemenu-section__desc {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: -0.45px;
   margin-bottom: 2rem;
@@ -767,7 +793,7 @@ article {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 6px 1rem;
@@ -812,9 +838,9 @@ article {
   z-index: 9999;
 }
 .sidemenu__image-desc p {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
-  color: #ee2324;
+  color: #ffffff;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -841,7 +867,7 @@ article {
   z-index: -9999;
 }
 .main__title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 7.625rem;
   bottom: 10px;
   color: #ffffff;
@@ -852,7 +878,7 @@ article {
 }
 @media screen and (max-width: 767px) {
   .main__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 4rem;
   }
 }
@@ -882,20 +908,20 @@ article {
 }
 
 .info__contato-horario {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   text-transform: capitalize;
 }
 .info__contato-time {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 8px;
 }
 .info__contato-link {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   display: block;
   font-weight: 500;
@@ -914,7 +940,7 @@ article {
 }
 
 .info__titulo {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 5.75rem;
   font-weight: 600;
   letter-spacing: -0.45px;
@@ -922,19 +948,19 @@ article {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .info__titulo {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 767px) {
   .info__titulo {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 4rem;
   }
 }
 
 .info__descricao {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -1008,7 +1034,7 @@ article {
   padding: 1rem;
 }
 .reviews__item-comment p {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   align-items: center;
   display: flex;
@@ -1025,7 +1051,7 @@ article {
   width: 16px;
 }
 .reviews__title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
   letter-spacing: -0.45px;
@@ -1033,7 +1059,7 @@ article {
 }
 @media screen and (max-width: 767px) {
   .reviews__title {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Moderustic", sans-serif;
     font-size: 1.5rem;
   }
 }
@@ -1046,11 +1072,22 @@ article {
   width: 100%;
 }
 .food h2 {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-size: 5.75rem;
   color: #ee2324;
   font-weight: 500;
   letter-spacing: -0.45px;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .food h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .food h2 {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

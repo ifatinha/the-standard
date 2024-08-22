@@ -1,17 +1,14 @@
 @use "sass:math";
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-$font-primary: "Libre Franklin",
-sans-serif;
-$font-secondary:"Source Sans 3",
-sans-serif;
+$font-primary  : "Moderustic", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
 
 @function rem($pixel, $context: 16) {
    @return math.div($pixel, $context) * 1rem;
 }
 
-$typography-sizes: (
-   12:rem(12),
+$typography-sizes: (12:rem(12),
    14:rem(14),
    16:rem(16),
    18:rem(18),
