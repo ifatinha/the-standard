@@ -4,7 +4,7 @@ import { asideBackground } from "./modules/aside.js";
 import { getLocalHour } from "./modules/getTime.js";
 import { articlePosition } from "./modules/article-position.js";
 import { carouselReviews, carouselImages } from "./modules/carousel.js";
-import { activeVillageTab, activeOffersTab } from './modules/sidemenu.js';
+import { activeVillageTab, activeOffersTab, activeSpaTab } from './modules/sidemenu.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     openDropdownHeader();
@@ -17,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
     carouselImages();
     activeVillageTab();
     activeOffersTab();
+    activeSpaTab();
 })

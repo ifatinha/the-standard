@@ -2,12 +2,12 @@ function updateTabcontent(tabcontents) {
     tabcontents.forEach(tab => tab.classList.remove("tabcontent_active"));
 }
 
-function activeSidemenu(links, tabcontents) {
+function activeSidemenu(links, tabcontents, classButton) {
 
     function updateTabContent(link, index) {
-        links.forEach(link => link.classList.remove("sidemenu-active"));
+        links.forEach(link => link.classList.remove(classButton));
         updateTabcontent(tabcontents);
-        link.classList.add("sidemenu-active");
+        link.classList.add(classButton);
         tabcontents[index].classList.add("tabcontent_active");
     }
 
@@ -27,12 +27,19 @@ export function activeVillageTab() {
     const links = document.querySelectorAll("#villages-list a");
     const tabcontents = document.querySelectorAll("[data-villages]");
 
-    activeSidemenu(links, tabcontents);
+    activeSidemenu(links, tabcontents, "sidemenu-active");
 }
 
 export function activeOffersTab() {
     const links = document.querySelectorAll("#offers-list a");
     const tabcontents = document.querySelectorAll("[data-offers]");
 
-    activeSidemenu(links, tabcontents);
+    activeSidemenu(links, tabcontents, "sidemenu-active");
+}
+
+export function activeSpaTab() {
+    const links = document.querySelectorAll("#spa-list a");
+    const tabcontents = document.querySelectorAll("[data-spa]");
+
+    activeSidemenu(links, tabcontents, "spa-button-active");
 }
