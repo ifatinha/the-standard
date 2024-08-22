@@ -118,6 +118,10 @@ article {
 .red-bg {
   background: #ee2324;
 }
+.red-bg .sidemenu-section__list li {
+  border: 1px solid transparent;
+  border-top-color: #ffffff;
+}
 .red-bg .sidemenu-section__list a:hover {
   background-color: #ffffff;
   color: #ee2324;
@@ -787,7 +791,7 @@ article {
 }
 .sidemenu-section__desc {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   letter-spacing: -0.45px;
   margin-bottom: 2rem;
   padding: 0 1rem;
@@ -799,8 +803,6 @@ article {
   flex-direction: column;
 }
 .sidemenu-section__list li {
-  border: 1px solid transparent;
-  border-top-color: #ffffff;
   width: 100%;
 }
 .sidemenu-section__list li a {

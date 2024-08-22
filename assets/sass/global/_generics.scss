@@ -19,6 +19,11 @@
    background: map-get($map: colors.$color-palette, $key: alert-red);
 
    .sidemenu-section__list {
+      li {
+         border          : 1px solid transparent;
+         border-top-color: map-get($map: colors.$color-palette, $key: pure-white);
+      }
+
       a {
          &:hover {
             background-color: map-get($map: colors.$color-palette, $key: pure-white);

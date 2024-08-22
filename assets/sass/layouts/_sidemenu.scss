@@ -14,7 +14,7 @@
     }
 
     &__menu {
-        color           : map-get($map: colors.$color-palette, $key: pure-white);
+        color: map-get($map: colors.$color-palette, $key: pure-white);
     }
 
     &__title {
@@ -30,7 +30,7 @@
     }
 
     &__desc {
-        @include typography.typography-text(16);
+        @include typography.typography-text(14);
         letter-spacing: -0.45px;
         margin-bottom : 2rem;
         padding       : 0 1rem;
@@ -41,8 +41,6 @@
         flex-direction: column;
 
         li {
-            border          : 1px solid transparent;
-            border-top-color: map-get($map: colors.$color-palette, $key: pure-white);
             width           : 100%;
 
             a {
