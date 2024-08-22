@@ -14,3 +14,24 @@
 .open-dropdown {
    display: block;
 }
+
+.red-bg {
+   background: map-get($map: colors.$color-palette, $key: alert-red);
+
+   .sidemenu-section__list {
+      a {
+         &:hover {
+            background-color: map-get($map: colors.$color-palette, $key: pure-white);
+            color           : map-get($map: colors.$color-palette, $key: alert-red);
+         }
+
+         i {
+            color: map-get($map: colors.$color-palette, $key: alert-red);
+         }
+      }
+   }
+}
+
+.yellow-bg {
+   background: map-get($map: colors.$color-palette, $key: sun-yellow);
+}

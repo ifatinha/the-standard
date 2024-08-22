@@ -14,7 +14,6 @@
     }
 
     &__menu {
-        background-color: map-get($map: colors.$color-palette, $key: alert-red);
         color           : map-get($map: colors.$color-palette, $key: pure-white);
     }
 
@@ -53,15 +52,6 @@
                 padding    : 6px 1rem;
                 transition : .3s ease-in-out;
                 width      : 100%;
-
-                &:hover {
-                    background-color: map-get($map: colors.$color-palette, $key: pure-white);
-                    color           : map-get($map: colors.$color-palette, $key: alert-red);
-                }
-
-                i {
-                    color: map-get($map: colors.$color-palette, $key: alert-red);
-                }
             }
         }
     }
