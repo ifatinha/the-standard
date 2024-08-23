@@ -101,10 +101,27 @@
     }
 }
 
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity   : 0;
+    }
+
+    to {
+        max-height: 100%;
+        opacity   : 1;
+    }
+}
+
 @mixin heartbeat() {
     @include prefixes.prefix(animation, heartbeat 2s ease-in-out infinite reverse both);
 }
 
 @mixin fadeEffect() {
     @include prefixes.prefix(animation, fadeEffect .3s);
+}
+
+@mixin slideDown() {
+    @include prefixes.prefix(animation, slideDown .5s);
+    animation-fill-mode: forwards;
 }
