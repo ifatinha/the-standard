@@ -1,6 +1,7 @@
 @use "../global/colors";
 @use "../global/typography";
 @use "../global/mixins";
+@use "../util/queries";
 
 .contact {
     max-width: 980px;
@@ -27,6 +28,10 @@
             color      : map-get($map: colors.$color-palette, $key: midnight-dark);
             display    : block;
             font-weight: 500;
+
+            @include queries.devices(m) {
+                padding         : 6px 12px;
+            }
         }
     }
 
