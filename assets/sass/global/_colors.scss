@@ -1,7 +1,6 @@
 @use "sass:map";
 
-$color-palette: (
-  primary-blue: #007bff,
+$color-palette: (primary-blue: #007bff,
   deep-indigo: #6610f2,
   royal-purple: #6f42c1,
   vivid-pink: #e83e8c,
@@ -12,6 +11,5 @@ $color-palette: (
   fresh-teal: #20c997,
   aqua-cyan: #17a2b8,
   pure-white: #ffffff,
-  neutral-gray: #6c757d,
-  midnight-dark: #343a40
-);
+  fog-gray:#dee2e6,
+  midnight-dark: #343a40);

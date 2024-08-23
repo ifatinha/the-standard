@@ -1,0 +1,53 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../global/mixins";
+
+.contact {
+    padding: 1rem 0;
+
+    &__info {
+        border-bottom: 1px solid map-get($map: colors.$color-palette, $key: fog-gray) !important;
+        border-top   : 1px solid map-get($map: colors.$color-palette, $key: fog-gray) !important;
+        text-align   : center;
+        width        : 100%;
+
+        h3 {
+            @include typography.typography-title(14);
+            color         : map-get($map: colors.$color-palette, $key: midnight-dark);
+            font-weight   : 500;
+            margin        : 8px 0;
+            text-transform: uppercase;
+        }
+
+        &>a {
+            @include typography.typography-text(14);
+            color      : map-get($map: colors.$color-palette, $key: midnight-dark);
+            display    : block;
+            font-weight: 500;
+        }
+    }
+
+    .social {
+        color          : map-get($map: colors.$color-palette, $key: alert-red);
+        justify-content: center;
+        margin         : 8px 0;
+    }
+
+    &__form {
+        padding: 1rem 0;
+
+        h2 {
+            @include typography.typography-title(34);
+            color         : map-get($map: colors.$color-palette, $key: alert-red);
+            font-weight   : 500;
+            margin-bottom : 8px;
+            text-transform: capitalize;
+        }
+
+        p {
+            @include typography.typography-text(14);
+            color        : map-get($map: colors.$color-palette, $key: midnight-dark);
+            margin-bottom: 1rem;
+        }
+    }
+}
