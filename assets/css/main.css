@@ -1080,6 +1080,45 @@ article {
   width: 100%;
 }
 
+.faq {
+  width: 100%;
+}
+.faq__title {
+  padding: 1rem;
+}
+.faq__title h2 {
+  font-family: "Moderustic", sans-serif;
+  font-size: 2.125rem;
+  color: #ee2324;
+  font-weight: 600;
+}
+.faq__list {
+  background: #ee2324;
+  color: #ffffff;
+}
+.faq__list dt {
+  font-family: "Moderustic", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 500;
+  letter-spacing: -0.45px;
+  padding: 1rem;
+}
+.faq__list dd {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0 1rem 1rem;
+}
+.faq__list dd p {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.faq__list dd a {
+  text-decoration: underline;
+}
+
 .main {
   height: 100%;
   position: relative;
