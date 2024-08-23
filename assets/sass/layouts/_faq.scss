@@ -29,6 +29,7 @@
 
         dd {
             @include typography.typography-text(14);
+            display    : none;
             font-weight: 500;
             padding    : 0 1rem 1rem;
 
@@ -40,6 +41,10 @@
 
             a {
                 text-decoration: underline;
+            }
+
+            ol {
+                padding-left: 1rem;
             }
         }
     }

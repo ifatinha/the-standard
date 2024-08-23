@@ -1107,6 +1107,7 @@ article {
 .faq__list dd {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
+  display: none;
   font-weight: 500;
   padding: 0 1rem 1rem;
 }
@@ -1117,6 +1118,9 @@ article {
 }
 .faq__list dd a {
   text-decoration: underline;
+}
+.faq__list dd ol {
+  padding-left: 1rem;
 }
 
 .main {
