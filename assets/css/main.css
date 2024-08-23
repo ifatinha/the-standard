@@ -300,7 +300,7 @@ article {
   }
 }
 
-.reviews__link, .sidemenu__image-desc a, .article__link {
+.article__bg a, .reviews__link, .sidemenu__image-desc a, .article__link {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   display: inline-block;
@@ -313,13 +313,13 @@ article {
   text-transform: capitalize;
 }
 
-.reviews__link, .sidemenu__image-desc a, .article__link {
+.article__bg a, .reviews__link, .sidemenu__image-desc a, .article__link {
   background-color: #ffffff;
   border: 1px solid #ee2324;
   box-shadow: #ee2324 3.75px 3.75px 0px 0px;
   color: #ee2324;
 }
-.reviews__link:hover, .sidemenu__image-desc a:hover, .article__link:hover {
+.article__bg a:hover, .reviews__link:hover, .sidemenu__image-desc a:hover, .article__link:hover {
   background-color: #ee2324;
   box-shadow: #ffffff 3.75px 3.75px 0px 0px;
   border-color: #ffffff;
@@ -908,6 +908,41 @@ article {
   color: #ffffff !important;
 }
 
+.footer {
+  background: #ee2324;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+.footer__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.footer__list li {
+  flex: 1 0 auto;
+}
+.footer__list a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  display: inline-block;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+.footer__list a:hover {
+  color: #343a40;
+}
+.footer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 .main {
   height: 100%;
   position: relative;
@@ -1148,6 +1183,54 @@ article {
 #spa .sidemenu__image-desc p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
+}
+
+.article__bg {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  flex-direction: column;
+  min-height: 380px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article__bg {
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article__bg {
+    height: auto;
+  }
+}
+.article__bg h2 {
+  font-family: "Moderustic", sans-serif;
+  font-size: 2.375rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.article__bg p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 14px;
+}
+#take-there {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/take-there.jpg");
+  background-position: center;
+}
+
+#culture {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/culture.jpg");
+  background-position: center;
+}
+
+#mapa {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/mapa.jpg");
+  background-position: 10% 90%;
 }
 
 /*# sourceMappingURL=main.css.map */

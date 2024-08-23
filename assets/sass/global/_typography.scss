@@ -8,7 +8,8 @@ $font-secondary: "Open Sans", sans-serif;
    @return math.div($pixel, $context) * 1rem;
 }
 
-$typography-sizes: (12:rem(12),
+$typography-sizes: (
+   12:rem(12),
    14:rem(14),
    16:rem(16),
    18:rem(18),

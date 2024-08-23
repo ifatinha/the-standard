@@ -1,0 +1,40 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../global/mixins";
+@use "../util/queries";
+
+.footer {
+    background: map-get($map: colors.$color-palette, $key: alert-red);
+    color     : map-get($map: colors.$color-palette, $key: pure-white);
+    padding   : 2rem 1rem;
+
+    &__list {
+        @include mixins.display-flex(center, center);
+        flex-wrap    : wrap;
+        gap          : 10px;
+        margin-bottom: 8px;
+
+        li {
+            flex: 1 0 auto;
+        }
+
+        a {
+            @include typography.typography-text(14);
+            display       : inline-block;
+            font-weight   : 500;
+            padding       : 8px 16px;
+            text-transform: uppercase;
+            transition    : .3s ease-in-out;
+
+            &:hover {
+                color: map-get($map: colors.$color-palette, $key: midnight-dark);
+            }
+        }
+    }
+
+    p {
+        @include typography.typography-text(12);
+        font-weight: 500;
+        text-align : center;
+    }
+}
