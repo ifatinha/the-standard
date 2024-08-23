@@ -746,21 +746,18 @@
                     mailing list e ganhe 15% de desconto em sua estadia em Hua Hin ou nas Maldivas.</p>
 
                 <form action="#" class="form">
-                    <div class="form-item">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                    <div class="form-item" id="emailInput">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
-                    <div class="form-item">
-                        <label for="fName">Nome</label>
-                        <input type="text" name="fName" id="fName">
+                    <div class="form-item" id="fNameInput">
+                        <input type="text" name="fName" id="fName" placeholder="Nome">
                     </div>
-                    <div class="form-item">
-                        <label for="lName">Sobrenome</label>
-                        <input type="text" name="lName" id="lName">
+                    <div class="form-item" id="lNameInput">
+                        <input type="text" name="lName" id="lName" placeholder="Sobrenome">
                     </div>
-                    <div class="form-item">
-                        <label for="country">Pais</label>
+                    <div class="form-item" id="countrySelect">
                         <select name="country" id="country">
+                            <option value="#" disabled selected>País</option>
                             <option value="BR">Brasil</option>
                             <option value="US">Estados Unidos</option>
                             <option value="CA">Canadá</option>
@@ -773,25 +770,27 @@
                             <option value="ZA">África do Sul</option>
                         </select>
                     </div>
-                    <div class="form-item">
-                        <label for="city">Cidade</label>
-                        <input type="text" name="city" id="city">
+                    <div class="form-item" id="cityInput">
+                        <input type="text" name="city" id="city" placeholder="Cidade">
                     </div>
-                    <div class="form-item">
-                        <label for="birthday">Aniversário</label>
-                        <input type="date" name="birthday" id="birthday">
+                    <div class="form-item" id="birthdayInput">
+                        <input type="text" name="birthday" id="birthday" placeholder="Data de nascimento (dd/mm/yyyy)">
                     </div>
-                    <div class="form-item">
+                    <div class="form-item" id="promotionsCheck">
                         <input type="checkbox" name="promotions" id="promotions">
-                        <span>Gostaria de receber e-mails do The Standard sobre promoções, novidades e eventos especiais.
-                        </span>
+                        <label for="promotions">Gostaria de receber e-mails do The Standard sobre promoções, novidades e
+                            eventos especiais.
+                        </label>
                     </div>
-                    <div class="form-item">
-                        <input type="checkbox" name="promotions" id="promotions">
-                        <span>I agree to The Standard's <a href="#">Terms of Use</a>
+                    <div class="form-item" id="termsCheck">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">I agree to The Standard's <a href="#">Terms of Use</a>
                             and have read and understood the
                             <a href="#">Privacy Policy</a>.
-                        </span>
+                        </label>
+                    </div>
+                    <div class="form-item form-button" id="formButton">
+                        <a href="#">Enviar</a>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,87 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../global/mixins";
+@use "../util/queries";
+@use "../components/buttons"as *;
+
+.form {
+    @include mixins.display-grid(repeat(4, 1fr));
+    @include typography.typography-text(14);
+    color      : map-get($map: colors.$color-palette, $key: midnight-dark);
+    font-weight: 600;
+    gap        : 1rem;
+
+    @include queries.devices-t-and-m() {
+        grid-template-columns: 1fr;
+        gap                  : 18px;
+    }
+
+    @include queries.devices(l) {
+
+        #emailInput {
+            grid-column: 1/-1;
+        }
+
+        #fNameInput,
+        #countrySelect,
+        #birthdayInput {
+            grid-column: span 2;
+        }
+
+        #lNameInput,
+        #cityInput {
+            grid-column: 3/-1;
+        }
+
+        #promotionsCheck,
+        #termsCheck {
+            @include mixins.display-flex(center, start);
+            grid-column: 1/-1;
+            gap        : 6px;
+        }
+
+        #formButton {
+            grid-column: span 1;
+        }
+    }
+
+    input {
+
+        &::placeholder {
+            color      : map-get($map: colors.$color-palette, $key: alert-red);
+            font-weight: 600;
+        }
+    }
+
+    select {
+        option {
+            color      : map-get($map: colors.$color-palette, $key: alert-red);
+            font-weight: 600;
+        }
+    }
+
+    input:not([type="checkbox"]),
+    select {
+        border             : 1px solid transparent;
+        border-bottom-color: map-get($map: colors.$color-palette, $key: alert-red);
+        color              : map-get($map: colors.$color-palette, $key: alert-red);
+        font-weight        : 600;
+        height             : calc(2.05rem + 2px);
+        outline            : none;
+        padding            : 6px 12px 0 2px;
+        width              : 100%;
+    }
+
+    &-item {
+        width: 100%;
+    }
+
+    &-button {
+        a {
+            @extend %button-default;
+            @extend %button-red;
+            display: inline-block;
+            width  : 100%;
+        }
+    }
+}

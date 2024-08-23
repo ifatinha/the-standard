@@ -3,7 +3,10 @@
 @use "../global/mixins";
 
 .contact {
-    padding: 1rem 0;
+    max-width: 980px;
+    margin   : 0 auto;
+    padding  : 1rem;
+    width    : 100%;
 
     &__info {
         border-bottom: 1px solid map-get($map: colors.$color-palette, $key: fog-gray) !important;

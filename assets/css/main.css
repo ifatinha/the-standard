@@ -314,7 +314,7 @@ article {
   }
 }
 
-.article__bg a, .reviews__link, .sidemenu__image-desc a, .article__link {
+.article__bg a, .reviews__link, .form-button a, .sidemenu__image-desc a, .article__link {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   display: inline-block;
@@ -327,13 +327,13 @@ article {
   text-transform: capitalize;
 }
 
-.article__bg a, .reviews__link, .sidemenu__image-desc a, .article__link {
+.article__bg a, .reviews__link, .form-button a, .sidemenu__image-desc a, .article__link {
   background-color: #ffffff;
   border: 1px solid #ee2324;
   box-shadow: #ee2324 3.75px 3.75px 0px 0px;
   color: #ee2324;
 }
-.article__bg a:hover, .reviews__link:hover, .sidemenu__image-desc a:hover, .article__link:hover {
+.article__bg a:hover, .reviews__link:hover, .form-button a:hover, .sidemenu__image-desc a:hover, .article__link:hover {
   background-color: #ee2324;
   box-shadow: #ffffff 3.75px 3.75px 0px 0px;
   border-color: #ffffff;
@@ -958,7 +958,10 @@ article {
 }
 
 .contact {
-  padding: 1rem 0;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
 }
 .contact__info {
   border-bottom: 1px solid #dee2e6 !important;
@@ -1002,6 +1005,79 @@ article {
   font-size: 0.875rem;
   color: #343a40;
   margin-bottom: 1rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #343a40;
+  font-weight: 600;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form #emailInput {
+    grid-column: 1/-1;
+  }
+  .form #fNameInput,
+  .form #countrySelect,
+  .form #birthdayInput {
+    grid-column: span 2;
+  }
+  .form #lNameInput,
+  .form #cityInput {
+    grid-column: 3/-1;
+  }
+  .form #promotionsCheck,
+  .form #termsCheck {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    grid-column: 1/-1;
+    gap: 6px;
+  }
+  .form #formButton {
+    grid-column: span 1;
+  }
+}
+.form input::placeholder {
+  color: #ee2324;
+  font-weight: 600;
+}
+.form select option {
+  color: #ee2324;
+  font-weight: 600;
+}
+.form input:not([type=checkbox]),
+.form select {
+  border: 1px solid transparent;
+  border-bottom-color: #ee2324;
+  color: #ee2324;
+  font-weight: 600;
+  height: calc(2.05rem + 2px);
+  outline: none;
+  padding: 6px 12px 0 2px;
+  width: 100%;
+}
+.form-item {
+  width: 100%;
+}
+.form-button a {
+  display: inline-block;
+  width: 100%;
 }
 
 .main {
